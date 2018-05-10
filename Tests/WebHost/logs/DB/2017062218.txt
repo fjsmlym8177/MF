@@ -1,0 +1,263 @@
+
+
+
+ 时间 2017-06-22 18:52:45.0740 
+ 消息内容 EF
+已于 2017/6/22 18:52:44 +08:00
+ 打开了连接
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.0965 
+ 消息内容 EF
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Customers')
+    OR t.TABLE_NAME = 'EdmMetadata'
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.0965 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.0965 
+ 消息内容 EF
+-- 正在 2017/6/22 18:52:45 +08:00
+ 执行
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.1505 
+ 消息内容 EF
+-- 已在 52 毫秒内完成，结果为: 1
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.1505 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.1505 
+ 消息内容 EF
+已于 2017/6/22 18:52:45 +08:00
+ 关闭了连接
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.2055 
+ 消息内容 EF
+已于 2017/6/22 18:52:45 +08:00
+ 打开了连接
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3215 
+ 消息内容 EF
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3220 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3220 
+ 消息内容 EF
+-- p__linq__0: 'WebHost.Infrastructure.WebHostDbContext' (Type = String, Size = 4000)
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3220 
+ 消息内容 EF
+-- 正在 2017/6/22 18:52:45 +08:00
+ 执行
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3375 
+ 消息内容 EF
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3375 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3375 
+ 消息内容 EF
+已于 2017/6/22 18:52:45 +08:00
+ 关闭了连接
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3375 
+ 消息内容 EF
+已于 2017/6/22 18:52:45 +08:00
+ 打开了连接
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3615 
+ 消息内容 EF
+SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3615 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3615 
+ 消息内容 EF
+-- p__linq__0: 'WebHost.Infrastructure.WebHostDbContext' (Type = String, Size = 4000)
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3615 
+ 消息内容 EF
+-- 正在 2017/6/22 18:52:45 +08:00
+ 执行
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3615 
+ 消息内容 EF
+-- 已在 5 毫秒内完成，结果为: SqlDataReader
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3615 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.3695 
+ 消息内容 EF
+已于 2017/6/22 18:52:45 +08:00
+ 关闭了连接
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.4075 
+ 消息内容 EF
+已于 2017/6/22 18:52:45 +08:00
+ 打开了连接
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.4205 
+ 消息内容 EF
+SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[NickName] AS [NickName], 
+    [Extent1].[PhoneNum] AS [PhoneNum]
+    FROM [dbo].[Customers] AS [Extent1]
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.4205 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.4205 
+ 消息内容 EF
+-- 正在 2017/6/22 18:52:45 +08:00
+ 执行
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.4370 
+ 消息内容 EF
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.4370 
+ 消息内容 EF
+
+
+ 线程ID 1 
+
+
+
+ 时间 2017-06-22 18:52:45.4370 
+ 消息内容 EF
+已于 2017/6/22 18:52:45 +08:00
+ 关闭了连接
+ 线程ID 1 

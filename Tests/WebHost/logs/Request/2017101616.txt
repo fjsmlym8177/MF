@@ -1,0 +1,448 @@
+
+
+
+ 时间 2017-10-16 16:29:41.4781 
+ 消息内容 requestLog
+{"ElapsedTime":2361.4474,"URI":"/","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/bootstrap.css\" rel=\"stylesheet\"/>\r\n<link href=\"/Content/site.css\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/Scripts/modernizr-2.6.2.js\"></script>\r\n\r\n</head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">应用程序名称</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">主页</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2017 - 我的 ASP.NET 应用程序</p>\r\n        </footer>\r\n    </div>\r\n\r\n    <script src=\"/Scripts/jquery-1.10.2.js\"></script>\r\n\r\n    <script src=\"/Scripts/bootstrap.js\"></script>\r\n<script src=\"/Scripts/respond.js\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 13 
+
+
+
+ 时间 2017-10-16 16:29:44.0963 
+ 消息内容 requestLog
+{"ElapsedTime":17.1708,"URI":"/Help","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n    <head>\r\n        <title>无法找到资源。</title>\r\n        <meta name=\"viewport\" content=\"width=device-width\" />\r\n        <style>\r\n         body {font-family:\"Verdana\";font-weight:normal;font-size: .7em;color:black;} \r\n         p {font-family:\"Verdana\";font-weight:normal;color:black;margin-top: -5px}\r\n         b {font-family:\"Verdana\";font-weight:bold;color:black;margin-top: -5px}\r\n         H1 { font-family:\"Verdana\";font-weight:normal;font-size:18pt;color:red }\r\n         H2 { font-family:\"Verdana\";font-weight:normal;font-size:14pt;color:maroon }\r\n         pre {font-family:\"Consolas\",\"Lucida Console\",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}\r\n         .marker {font-weight: bold; color: black;text-decoration: none;}\r\n         .version {color: gray;}\r\n         .error {margin-bottom: 10px;}\r\n         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }\r\n         @media screen and (max-width: 639px) {\r\n          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }\r\n         }\r\n         @media screen and (max-width: 479px) {\r\n          pre { width: 280px; }\r\n         }\r\n        </style>\r\n    </head>\r\n\r\n    <body bgcolor=\"white\">\r\n\r\n            <span><H1>“/”应用程序中的服务器错误。<hr width=100% size=1 color=silver></H1>\r\n\r\n            <h2> <i>无法找到资源。</i> </h2></span>\r\n\r\n            <font face=\"Arial, Helvetica, Geneva, SunSans-Regular, sans-serif \">\r\n\r\n            <b> 说明: </b>HTTP 404。您正在查找的资源(或者它的一个依赖项)可能已被移除，或其名称已更改，或暂时不可用。请检查以下 URL 并确保其拼写正确。\r\n            <br><br>\r\n\r\n            <b> 请求的 URL: </b>/Help<br><br>\r\n\r\n            <hr width=100% size=1 color=silver>\r\n\r\n            <b>版本信息:</b>&nbsp;Microsoft .NET Framework 版本:4.0.30319; ASP.NET 版本:4.7.2053.0\r\n\r\n            </font>\r\n\r\n    </body>\r\n</html>\r\n<!-- \r\n[HttpException]: 未找到路径“/Help”的控制器或该控制器未实现 IController。\r\n   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)\r\n   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)\r\n   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)\r\n   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)\r\n   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)\r\n   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)\r\n   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()\r\n   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)\r\n-->","Status":404,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:53608"],"Referer":["http://localhost:53608/"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:30:18.6583 
+ 消息内容 requestLog
+{"ElapsedTime":178.5497,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 13 
+
+
+
+ 时间 2017-10-16 16:30:18.6953 
+ 消息内容 requestLog
+{"ElapsedTime":2.1642,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 7 
+
+
+
+ 时间 2017-10-16 16:30:28.0768 
+ 消息内容 requestLog
+{"ElapsedTime":0.7207,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 16 
+
+
+
+ 时间 2017-10-16 16:30:28.1078 
+ 消息内容 requestLog
+{"ElapsedTime":0.4898,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 13 
+
+
+
+ 时间 2017-10-16 16:30:57.5465 
+ 消息内容 requestLog
+{"ElapsedTime":0.5453,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:30:57.5755 
+ 消息内容 requestLog
+{"ElapsedTime":0.4637,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:31:04.8249 
+ 消息内容 requestLog
+{"ElapsedTime":0.47390000000000004,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 19 
+
+
+
+ 时间 2017-10-16 16:31:04.8519 
+ 消息内容 requestLog
+{"ElapsedTime":0.56300000000000006,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:31:10.3442 
+ 消息内容 requestLog
+{"ElapsedTime":59.1659,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 16 
+
+
+
+ 时间 2017-10-16 16:31:10.3752 
+ 消息内容 requestLog
+{"ElapsedTime":1.9621000000000002,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 16 
+
+
+
+ 时间 2017-10-16 16:31:14.7595 
+ 消息内容 requestLog
+{"ElapsedTime":57.1509,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 18 
+
+
+
+ 时间 2017-10-16 16:31:14.7795 
+ 消息内容 requestLog
+{"ElapsedTime":2.0867,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 7 
+
+
+
+ 时间 2017-10-16 16:31:24.5880 
+ 消息内容 requestLog
+{"ElapsedTime":13.298200000000001,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:31:24.6110 
+ 消息内容 requestLog
+{"ElapsedTime":2.2887,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 19 
+
+
+
+ 时间 2017-10-16 16:31:56.6089 
+ 消息内容 requestLog
+{"ElapsedTime":0.6279,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 20 
+
+
+
+ 时间 2017-10-16 16:31:56.6239 
+ 消息内容 requestLog
+{"ElapsedTime":0.5943,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 18 
+
+
+
+ 时间 2017-10-16 16:32:49.3559 
+ 消息内容 requestLog
+{"ElapsedTime":0.65870000000000006,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 18 
+
+
+
+ 时间 2017-10-16 16:32:49.3699 
+ 消息内容 requestLog
+{"ElapsedTime":1.0795000000000001,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 20 
+
+
+
+ 时间 2017-10-16 16:33:44.3090 
+ 消息内容 requestLog
+{"ElapsedTime":219.2007,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 19 
+
+
+
+ 时间 2017-10-16 16:33:44.3400 
+ 消息内容 requestLog
+{"ElapsedTime":1.595,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 17 
+
+
+
+ 时间 2017-10-16 16:33:49.4383 
+ 消息内容 requestLog
+{"ElapsedTime":2.4935,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 13 
+
+
+
+ 时间 2017-10-16 16:33:49.4653 
+ 消息内容 requestLog
+{"ElapsedTime":1.1537,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 17 
+
+
+
+ 时间 2017-10-16 16:33:53.4535 
+ 消息内容 requestLog
+{"ElapsedTime":46.8594,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 17 
+
+
+
+ 时间 2017-10-16 16:33:53.4685 
+ 消息内容 requestLog
+{"ElapsedTime":2.4343,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 18 
+
+
+
+ 时间 2017-10-16 16:33:56.7407 
+ 消息内容 requestLog
+{"ElapsedTime":8.3148,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 19 
+
+
+
+ 时间 2017-10-16 16:33:56.7407 
+ 消息内容 requestLog
+{"ElapsedTime":1.3519,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 21 
+
+
+
+ 时间 2017-10-16 16:33:59.5709 
+ 消息内容 requestLog
+{"ElapsedTime":0.53370000000000006,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 20 
+
+
+
+ 时间 2017-10-16 16:33:59.5849 
+ 消息内容 requestLog
+{"ElapsedTime":0.47440000000000004,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 21 
+
+
+
+ 时间 2017-10-16 16:35:21.1076 
+ 消息内容 requestLog
+{"ElapsedTime":157.60930000000002,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 20 
+
+
+
+ 时间 2017-10-16 16:35:21.1456 
+ 消息内容 requestLog
+{"ElapsedTime":1.6888,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 17 
+
+
+
+ 时间 2017-10-16 16:35:38.7716 
+ 消息内容 requestLog
+{"ElapsedTime":0.5887,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 20 
+
+
+
+ 时间 2017-10-16 16:35:38.7856 
+ 消息内容 requestLog
+{"ElapsedTime":0.5584,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 12 
+
+
+
+ 时间 2017-10-16 16:39:23.9845 
+ 消息内容 requestLog
+{"ElapsedTime":2390.3065,"URI":"/","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/bootstrap.css\" rel=\"stylesheet\"/>\r\n<link href=\"/Content/site.css\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/Scripts/modernizr-2.6.2.js\"></script>\r\n\r\n</head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">应用程序名称</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">主页</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2017 - 我的 ASP.NET 应用程序</p>\r\n        </footer>\r\n    </div>\r\n\r\n    <script src=\"/Scripts/jquery-1.10.2.js\"></script>\r\n\r\n    <script src=\"/Scripts/bootstrap.js\"></script>\r\n<script src=\"/Scripts/respond.js\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:39:28.7087 
+ 消息内容 requestLog
+{"ElapsedTime":15.7614,"URI":"/Help","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n    <head>\r\n        <title>无法找到资源。</title>\r\n        <meta name=\"viewport\" content=\"width=device-width\" />\r\n        <style>\r\n         body {font-family:\"Verdana\";font-weight:normal;font-size: .7em;color:black;} \r\n         p {font-family:\"Verdana\";font-weight:normal;color:black;margin-top: -5px}\r\n         b {font-family:\"Verdana\";font-weight:bold;color:black;margin-top: -5px}\r\n         H1 { font-family:\"Verdana\";font-weight:normal;font-size:18pt;color:red }\r\n         H2 { font-family:\"Verdana\";font-weight:normal;font-size:14pt;color:maroon }\r\n         pre {font-family:\"Consolas\",\"Lucida Console\",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}\r\n         .marker {font-weight: bold; color: black;text-decoration: none;}\r\n         .version {color: gray;}\r\n         .error {margin-bottom: 10px;}\r\n         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }\r\n         @media screen and (max-width: 639px) {\r\n          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }\r\n         }\r\n         @media screen and (max-width: 479px) {\r\n          pre { width: 280px; }\r\n         }\r\n        </style>\r\n    </head>\r\n\r\n    <body bgcolor=\"white\">\r\n\r\n            <span><H1>“/”应用程序中的服务器错误。<hr width=100% size=1 color=silver></H1>\r\n\r\n            <h2> <i>无法找到资源。</i> </h2></span>\r\n\r\n            <font face=\"Arial, Helvetica, Geneva, SunSans-Regular, sans-serif \">\r\n\r\n            <b> 说明: </b>HTTP 404。您正在查找的资源(或者它的一个依赖项)可能已被移除，或其名称已更改，或暂时不可用。请检查以下 URL 并确保其拼写正确。\r\n            <br><br>\r\n\r\n            <b> 请求的 URL: </b>/Help<br><br>\r\n\r\n            <hr width=100% size=1 color=silver>\r\n\r\n            <b>版本信息:</b>&nbsp;Microsoft .NET Framework 版本:4.0.30319; ASP.NET 版本:4.7.2053.0\r\n\r\n            </font>\r\n\r\n    </body>\r\n</html>\r\n<!-- \r\n[HttpException]: 未找到路径“/Help”的控制器或该控制器未实现 IController。\r\n   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)\r\n   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)\r\n   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)\r\n   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)\r\n   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)\r\n   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)\r\n   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()\r\n   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)\r\n-->","Status":404,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:53608"],"Referer":["http://localhost:53608/"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 12 
+
+
+
+ 时间 2017-10-16 16:39:32.3459 
+ 消息内容 requestLog
+{"ElapsedTime":1.9939,"URI":"/","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/bootstrap.css\" rel=\"stylesheet\"/>\r\n<link href=\"/Content/site.css\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/Scripts/modernizr-2.6.2.js\"></script>\r\n\r\n</head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">应用程序名称</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">主页</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2017 - 我的 ASP.NET 应用程序</p>\r\n        </footer>\r\n    </div>\r\n\r\n    <script src=\"/Scripts/jquery-1.10.2.js\"></script>\r\n\r\n    <script src=\"/Scripts/bootstrap.js\"></script>\r\n<script src=\"/Scripts/respond.js\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:53608"],"Referer":["http://localhost:53608/"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 14 
+
+
+
+ 时间 2017-10-16 16:40:00.6175 
+ 消息内容 requestLog
+{"ElapsedTime":251.72060000000002,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 5 
+
+
+
+ 时间 2017-10-16 16:40:00.6626 
+ 消息内容 requestLog
+{"ElapsedTime":2.4968,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 6 
+
+
+
+ 时间 2017-10-16 16:45:04.6389 
+ 消息内容 requestLog
+{"ElapsedTime":6900.8903,"URI":"/","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/bootstrap.css\" rel=\"stylesheet\"/>\r\n<link href=\"/Content/site.css\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/Scripts/modernizr-2.6.2.js\"></script>\r\n\r\n</head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">应用程序名称</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">主页</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2017 - 我的 ASP.NET 应用程序</p>\r\n        </footer>\r\n    </div>\r\n\r\n    <script src=\"/Scripts/jquery-1.10.2.js\"></script>\r\n\r\n    <script src=\"/Scripts/bootstrap.js\"></script>\r\n<script src=\"/Scripts/respond.js\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 13 
+
+
+
+ 时间 2017-10-16 16:45:10.4703 
+ 消息内容 requestLog
+{"ElapsedTime":1.8502,"URI":"/","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/bootstrap.css\" rel=\"stylesheet\"/>\r\n<link href=\"/Content/site.css\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/Scripts/modernizr-2.6.2.js\"></script>\r\n\r\n</head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">应用程序名称</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">主页</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2017 - 我的 ASP.NET 应用程序</p>\r\n        </footer>\r\n    </div>\r\n\r\n    <script src=\"/Scripts/jquery-1.10.2.js\"></script>\r\n\r\n    <script src=\"/Scripts/bootstrap.js\"></script>\r\n<script src=\"/Scripts/respond.js\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n","Status":200,"Headers":{"Cache-Control":["max-age=0"],"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 12 
+
+
+
+ 时间 2017-10-16 16:45:28.3163 
+ 消息内容 requestLog
+{"ElapsedTime":0.89330000000000009,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 12 
+
+
+
+ 时间 2017-10-16 16:45:28.3453 
+ 消息内容 requestLog
+{"ElapsedTime":0.8154,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 5 
+
+
+
+ 时间 2017-10-16 16:45:34.5306 
+ 消息内容 requestLog
+{"ElapsedTime":0.5159,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本1\"]","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:45:34.5606 
+ 消息内容 requestLog
+{"ElapsedTime":0.4973,"URI":"/api/HttpTest","RequestParams":"","Result":"[\"Get版本2\"]","Status":200,"Headers":{"Content-Type":["application/json;charset=UTF-8"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 7 
+
+
+
+ 时间 2017-10-16 16:45:49.7975 
+ 消息内容 requestLog
+{"ElapsedTime":76.9357,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 14 
+
+
+
+ 时间 2017-10-16 16:45:49.8165 
+ 消息内容 requestLog
+{"ElapsedTime":2.0419,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:45:55.7619 
+ 消息内容 requestLog
+{"ElapsedTime":8.1585,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 12 
+
+
+
+ 时间 2017-10-16 16:45:55.7789 
+ 消息内容 requestLog
+{"ElapsedTime":1.49,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:45:59.6911 
+ 消息内容 requestLog
+{"ElapsedTime":2.0060000000000002,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 13 
+
+
+
+ 时间 2017-10-16 16:45:59.7071 
+ 消息内容 requestLog
+{"ElapsedTime":1.3267,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["localhost:53608"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 8 
+
+
+
+ 时间 2017-10-16 16:48:07.1494 
+ 消息内容 requestLog
+{"ElapsedTime":2877.4139,"URI":"/","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/bootstrap.css\" rel=\"stylesheet\"/>\r\n<link href=\"/Content/site.css\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/Scripts/modernizr-2.6.2.js\"></script>\r\n\r\n</head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">应用程序名称</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">主页</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2017 - 我的 ASP.NET 应用程序</p>\r\n        </footer>\r\n    </div>\r\n\r\n    <script src=\"/Scripts/jquery-1.10.2.js\"></script>\r\n\r\n    <script src=\"/Scripts/bootstrap.js\"></script>\r\n<script src=\"/Scripts/respond.js\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["ASP.NET_SessionId=jegihnxfifhyyhwgx5iyny2a; userinf_tcwl=userid=aixiaowen&serviceid=06C16DF3F65DED83; TCWL_All=au=|M_103_A_|M_103_PD_|M_103_D_|M_103_E_|M_169|M_170|M_171|M_172_C_|M_172_B_|M_173_C_|M_173_B_|M_174_M_|M_174_D_|M_174_B_|M_175_C_|M_175_B_|M_179|,M_103_A_|M_103_PD_|M_103_D_|M_103_E_|,M_169|,M_170|,M_171|,M_172_C_|M_172_B_|,M_173_C_|M_173_B_|,M_174_M_|M_174_D_|M_174_B_|,M_175_C_|M_175_B_|,M_179|,; TCWL_Time=time=49e48b04-d04a-4b56-a120-71ca4ac47d39; Hm_lvt_dafd26aff966f0d13b566cb775536a97=1507862593; Hm_lpvt_dafd26aff966f0d13b566cb775536a97=1507863033"],"Host":["localhost:9090"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 7 
+
+
+
+ 时间 2017-10-16 16:48:18.9411 
+ 消息内容 requestLog
+{"ElapsedTime":1.2745,"URI":"/","RequestParams":"","Result":"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Home Page</title>\r\n    <link href=\"/Content/bootstrap.css\" rel=\"stylesheet\"/>\r\n<link href=\"/Content/site.css\" rel=\"stylesheet\"/>\r\n\r\n    <script src=\"/Scripts/modernizr-2.6.2.js\"></script>\r\n\r\n</head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<body>\r\n    <div class=\"navbar navbar-inverse navbar-fixed-top\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\" href=\"/\">应用程序名称</a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=\"/\">主页</a></li>\r\n                    <li><a href=\"/Help\">API</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"container body-content\">\r\n        \r\n<div class=\"jumbotron\">\r\n    <h1>ASP.NET</h1>\r\n    <p class=\"lead\">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>\r\n    <p><a href=\"https://asp.net\" class=\"btn btn-primary btn-lg\">Learn more &raquo;</a></p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <h2>Getting started</h2>\r\n        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach\r\n        a broad range of clients, including browsers and mobile devices. ASP.NET Web API\r\n        is an ideal platform for building RESTful applications on the .NET Framework.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301870\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Get more libraries</h2>\r\n        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301871\">Learn more &raquo;</a></p>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <h2>Web Hosting</h2>\r\n        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>\r\n        <p><a class=\"btn btn-default\" href=\"https://go.microsoft.com/fwlink/?LinkId=301872\">Learn more &raquo;</a></p>\r\n    </div>\r\n</div>\r\n\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; 2017 - 我的 ASP.NET 应用程序</p>\r\n        </footer>\r\n    </div>\r\n\r\n    <script src=\"/Scripts/jquery-1.10.2.js\"></script>\r\n\r\n    <script src=\"/Scripts/bootstrap.js\"></script>\r\n<script src=\"/Scripts/respond.js\"></script>\r\n\r\n    \r\n</body>\r\n</html>\r\n","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"],"Accept-Encoding":["gzip, deflate"],"Accept-Language":["zh-CN,zh;q=0.8"],"Host":["10.2.0.202:9090"],"User-Agent":["Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"],"Upgrade-Insecure-Requests":["1"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"GET"}
+ 线程ID 5 
+
+
+
+ 时间 2017-10-16 16:48:33.4589 
+ 消息内容 requestLog
+{"ElapsedTime":242.07760000000002,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 17 
+
+
+
+ 时间 2017-10-16 16:48:33.4769 
+ 消息内容 requestLog
+{"ElapsedTime":3.685,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"DELETE版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 17 
+
+
+
+ 时间 2017-10-16 16:49:25.1978 
+ 消息内容 requestLog
+{"ElapsedTime":63.535300000000007,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 7 
+
+
+
+ 时间 2017-10-16 16:49:25.2128 
+ 消息内容 requestLog
+{"ElapsedTime":1.9491,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 17 
+
+
+
+ 时间 2017-10-16 16:50:06.6322 
+ 消息内容 requestLog
+{"ElapsedTime":0.6358,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 18 
+
+
+
+ 时间 2017-10-16 16:50:08.2313 
+ 消息内容 requestLog
+{"ElapsedTime":0.70490000000000008,"URI":"/api/HttpTest/1","RequestParams":"\"\"","Result":"\"PUT版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"PUT"}
+ 线程ID 18 
+
+
+
+ 时间 2017-10-16 16:51:16.5552 
+ 消息内容 requestLog
+{"ElapsedTime":25.951700000000002,"URI":"/api/HttpTest","RequestParams":"{\"xxxx\":\"ccccccc\"}","Result":"\"POST版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["18"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 5 
+
+
+
+ 时间 2017-10-16 16:51:36.9944 
+ 消息内容 requestLog
+{"ElapsedTime":2.5406,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 18 
+
+
+
+ 时间 2017-10-16 16:53:19.2242 
+ 消息内容 requestLog
+{"ElapsedTime":0.787,"URI":"/api/HttpTest","RequestParams":"{\"xxxx\":\"ccccccc\",\"A\":\"Lym\",\"B\":\"LRX\"}","Result":"\"POST版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["38"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 16 
+
+
+
+ 时间 2017-10-16 16:53:19.2372 
+ 消息内容 requestLog
+{"ElapsedTime":0.7347,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本2\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"],"mike-api-version":["2"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 7 
+
+
+
+ 时间 2017-10-16 16:53:51.7261 
+ 消息内容 requestLog
+{"ElapsedTime":446.9443,"URI":"/api/HttpTest","RequestParams":"{\"xxxx\":\"ccccccc\",\"A\":\"Lym\",\"B\":\"LRX\"}","Result":"\"POST版本1Lym LRX\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["38"],"Content-Type":["application/json;charset=UTF-8"],"Expect":["100-continue"],"Host":["10.2.0.202:9090"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 5 

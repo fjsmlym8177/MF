@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.Domain", "src\MF.Domain\MF.Domain.csproj", "{292A3077-CD35-46AF-8550-364A6BF2D091}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.Core", "src\MF.Core\MF.Core.csproj", "{481E5055-F694-44DE-BED6-44F009BC823A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.Core.Rabbit", "src\MF.Core.Rabbit\MF.Core.Rabbit.csproj", "{4682F1A5-01E3-4A09-97DE-81C90F3C8645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.Data", "src\MF.Data\MF.Data.csproj", "{6D4D5E54-06D5-4A72-81C0-0E4D8A3430B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.MiddleWare.Logging", "src\MF.MiddleWare.Logging\MF.MiddleWare.Logging.csproj", "{4F281CD2-30EF-4B12-964B-EAE96047E99D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MiddleWare", "MiddleWare", "{45FFE335-B7A6-4FFC-BD8F-F1E4BC4D2428}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{07827647-33E5-4ACA-B60B-336602DD8148}"
+	ProjectSection(SolutionItems) = preProject
+		libs\Ionic.Zlib.dll = libs\Ionic.Zlib.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.MiddleWare.Exception", "src\MF.MiddleWare.Exception\MF.MiddleWare.Exception.csproj", "{5279AF16-1A1B-402F-A598-8A0761F019CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8D5C42DF-6AE0-4810-A2B1-12E1671B8EE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHost", "Tests\WebHost\WebHost.csproj", "{52744FB4-E8A5-4DA2-9586-1D63783E64D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D6406965-CA76-428F-92ED-C5FE16472C13}"
+	ProjectSection(SolutionItems) = preProject
+		docs\NLog.config = docs\NLog.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.Core.Tests", "Tests\MF.Core.Tests\MF.Core.Tests.csproj", "{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{292A3077-CD35-46AF-8550-364A6BF2D091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292A3077-CD35-46AF-8550-364A6BF2D091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292A3077-CD35-46AF-8550-364A6BF2D091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292A3077-CD35-46AF-8550-364A6BF2D091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481E5055-F694-44DE-BED6-44F009BC823A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481E5055-F694-44DE-BED6-44F009BC823A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481E5055-F694-44DE-BED6-44F009BC823A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481E5055-F694-44DE-BED6-44F009BC823A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4682F1A5-01E3-4A09-97DE-81C90F3C8645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4682F1A5-01E3-4A09-97DE-81C90F3C8645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4682F1A5-01E3-4A09-97DE-81C90F3C8645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4682F1A5-01E3-4A09-97DE-81C90F3C8645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4D5E54-06D5-4A72-81C0-0E4D8A3430B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4D5E54-06D5-4A72-81C0-0E4D8A3430B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4D5E54-06D5-4A72-81C0-0E4D8A3430B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4D5E54-06D5-4A72-81C0-0E4D8A3430B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F281CD2-30EF-4B12-964B-EAE96047E99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F281CD2-30EF-4B12-964B-EAE96047E99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F281CD2-30EF-4B12-964B-EAE96047E99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F281CD2-30EF-4B12-964B-EAE96047E99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5279AF16-1A1B-402F-A598-8A0761F019CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5279AF16-1A1B-402F-A598-8A0761F019CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5279AF16-1A1B-402F-A598-8A0761F019CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5279AF16-1A1B-402F-A598-8A0761F019CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52744FB4-E8A5-4DA2-9586-1D63783E64D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52744FB4-E8A5-4DA2-9586-1D63783E64D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52744FB4-E8A5-4DA2-9586-1D63783E64D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52744FB4-E8A5-4DA2-9586-1D63783E64D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F281CD2-30EF-4B12-964B-EAE96047E99D} = {45FFE335-B7A6-4FFC-BD8F-F1E4BC4D2428}
+		{5279AF16-1A1B-402F-A598-8A0761F019CB} = {45FFE335-B7A6-4FFC-BD8F-F1E4BC4D2428}
+		{52744FB4-E8A5-4DA2-9586-1D63783E64D6} = {8D5C42DF-6AE0-4810-A2B1-12E1671B8EE0}
+		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB} = {8D5C42DF-6AE0-4810-A2B1-12E1671B8EE0}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://120.27.161.80:8080/tfs/allen
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\MF.Domain\\MF.Domain.csproj
+		SccProjectName1 = src/MF.Domain
+		SccLocalPath1 = src\\MF.Domain
+		SccProjectUniqueName2 = src\\MF.Core\\MF.Core.csproj
+		SccProjectName2 = src/MF.Core
+		SccLocalPath2 = src\\MF.Core
+		SccProjectUniqueName3 = src\\MF.Core.Rabbit\\MF.Core.Rabbit.csproj
+		SccProjectName3 = src/MF.Core.Rabbit
+		SccLocalPath3 = src\\MF.Core.Rabbit
+		SccProjectUniqueName4 = src\\MF.Data\\MF.Data.csproj
+		SccProjectName4 = src/MF.Data
+		SccLocalPath4 = src\\MF.Data
+		SccProjectUniqueName5 = src\\MF.MiddleWare.Logging\\MF.MiddleWare.Logging.csproj
+		SccProjectTopLevelParentUniqueName5 = MF.sln
+		SccProjectName5 = src/MF.MiddleWare.Logging
+		SccLocalPath5 = src\\MF.MiddleWare.Logging
+		SccProjectUniqueName6 = src\\MF.MiddleWare.Exception\\MF.MiddleWare.Exception.csproj
+		SccProjectTopLevelParentUniqueName6 = MF.sln
+		SccProjectName6 = src/MF.MiddleWare.Exception
+		SccLocalPath6 = src\\MF.MiddleWare.Exception
+		SccProjectUniqueName7 = Tests\\WebHost\\WebHost.csproj
+		SccProjectTopLevelParentUniqueName7 = MF.sln
+		SccProjectName7 = Tests/WebHost
+		SccLocalPath7 = Tests\\WebHost
+		SccProjectUniqueName8 = Tests\\MF.Core.Tests\\MF.Core.Tests.csproj
+		SccProjectTopLevelParentUniqueName8 = MF.sln
+		SccProjectName8 = Tests/MF.Core.Tests
+		SccLocalPath8 = Tests\\MF.Core.Tests
+	EndGlobalSection
+EndGlobal

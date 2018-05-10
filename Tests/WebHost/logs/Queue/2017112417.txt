@@ -1,0 +1,60 @@
+
+
+
+ 时间 2017-11-24 17:55:58.0430 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：mike.testlym
+message：{"Id":"b7494aba-cfe4-4e6c-9935-d740f960e18e","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 17 
+
+
+
+ 时间 2017-11-24 17:55:58.0430 
+ 消息内容 Receive
+{"Id":"b7494aba-cfe4-4e6c-9935-d740f960e18e","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 28 
+
+
+
+ 时间 2017-11-24 17:55:58.0550 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：mike.testlym
+message：{"Id":"5a90abc8-c93a-4018-94ab-723e909345e9","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 17 
+
+
+
+ 时间 2017-11-24 17:55:58.0550 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：mike.testlym
+message：{"Id":"9d72eb43-29e2-4506-8fa2-3f02c31b9720","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 17 
+
+
+
+ 时间 2017-11-24 17:55:58.0550 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：mike.testlym
+message：{"Id":"e0463daa-f809-4c2f-ad82-2ecd925154e1","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 17 
+
+
+
+ 时间 2017-11-24 17:55:58.0550 
+ 消息内容 Receive
+{"Id":"e0463daa-f809-4c2f-ad82-2ecd925154e1","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 37 
+
+
+
+ 时间 2017-11-24 17:55:58.0550 
+ 消息内容 Receive
+{"Id":"9d72eb43-29e2-4506-8fa2-3f02c31b9720","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 36 
+
+
+
+ 时间 2017-11-24 17:55:58.0550 
+ 消息内容 Receive
+{"Id":"5a90abc8-c93a-4018-94ab-723e909345e9","PushName":"WebHost","PushTime":"2017-11-24 17:55:57","Expiration":0,"Data":"test"}
+ 线程ID 34 

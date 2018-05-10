@@ -1,0 +1,448 @@
+
+
+
+ 时间 2017-06-23 15:42:19.5580 
+ 消息内容 requestLog
+{"ActionName":null,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":0,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{},"DBLogs":["已于 2017/6/23 15:42:19 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:42:19 +08:00\r\n 执行","-- 已在 31 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:42:19 +08:00\r\n 关闭了连接","已于 2017/6/23 15:42:19 +08:00\r\n 打开了连接","已于 2017/6/23 15:42:19 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'e523f0ae-ba06-4771-900c-2cf4b1b1151d' (Type = Guid)\r\n","-- 正在 2017/6/23 15:42:19 +08:00\r\n 执行","-- 已在 4 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:42:19 +08:00\r\n 提交了事务","已于 2017/6/23 15:42:19 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 52\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 22 
+
+
+
+ 时间 2017-06-23 15:51:09.2150 
+ 消息内容 requestLog
+{"ActionName":null,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 42 
+
+
+
+ 时间 2017-06-23 15:51:09.3060 
+ 消息内容 requestLog
+{"ActionName":null,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:51:09.3430 
+ 消息内容 requestLog
+{"ActionName":null,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"cb032a4e-32e1-4e14-9af1-475943ebb451":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":264.6983,"Url":"http://localhost:53608/api/HttpTest/1"},"08f73813-40eb-4eaa-b8ac-7f1380b7df81":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":36.119800000000005,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:51:08 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:51:08 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:51:08 +08:00\r\n 关闭了连接","已于 2017/6/23 15:51:08 +08:00\r\n 打开了连接","已于 2017/6/23 15:51:08 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '1d7fb4f6-8a27-47c1-bb8f-2d76471ad3db' (Type = Guid)\r\n","-- 正在 2017/6/23 15:51:08 +08:00\r\n 执行","-- 已在 9 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:51:08 +08:00\r\n 提交了事务","已于 2017/6/23 15:51:08 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:51:17.7815 
+ 消息内容 requestLog
+{"ActionName":null,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 35 
+
+
+
+ 时间 2017-06-23 15:51:17.7955 
+ 消息内容 requestLog
+{"ActionName":null,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 42 
+
+
+
+ 时间 2017-06-23 15:51:17.7955 
+ 消息内容 requestLog
+{"ActionName":null,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"70fded78-76ea-4aff-81ad-ed30a897ca63":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":4.5902,"Url":"http://localhost:53608/api/HttpTest/1"},"50bf5837-ce3c-4f6e-8276-b6c771d43cde":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":10.4358,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:51:17 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:51:17 +08:00\r\n 执行","-- 已在 2 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:51:17 +08:00\r\n 关闭了连接","已于 2017/6/23 15:51:17 +08:00\r\n 打开了连接","已于 2017/6/23 15:51:17 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '78fdf785-7479-42d6-9a25-2d817acc224d' (Type = Guid)\r\n","-- 正在 2017/6/23 15:51:17 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:51:17 +08:00\r\n 提交了事务","已于 2017/6/23 15:51:17 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:56:49.2983 
+ 消息内容 requestLog
+{"ElapsedTime":79.885100000000008,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Connection":["Keep-Alive"],"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:56:49.4023 
+ 消息内容 requestLog
+{"ElapsedTime":30.4201,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:56:49.4433 
+ 消息内容 requestLog
+{"ElapsedTime":685.02870000000007,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"7266d0bd-4aa1-48bd-9e59-721d2fd7c3b1":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":242.649,"Url":"http://localhost:53608/api/HttpTest/1"},"2ab77650-f5eb-491c-a62b-f41b81198378":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":40.7123,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:56:48 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:56:48 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:56:48 +08:00\r\n 关闭了连接","已于 2017/6/23 15:56:48 +08:00\r\n 打开了连接","已于 2017/6/23 15:56:48 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '68634cd2-fb82-48df-bb63-2dbd03875608' (Type = Guid)\r\n","-- 正在 2017/6/23 15:56:49 +08:00\r\n 执行","-- 已在 8 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:56:49 +08:00\r\n 提交了事务","已于 2017/6/23 15:56:49 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:12.1705 
+ 消息内容 requestLog
+{"ElapsedTime":4.5659,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:12.2236 
+ 消息内容 requestLog
+{"ElapsedTime":3.3692,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:12.2285 
+ 消息内容 requestLog
+{"ElapsedTime":90.087600000000009,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"28c16c27-7946-48a8-8203-c1d4bc0141f1":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":15.2947,"Url":"http://localhost:53608/api/HttpTest/1"},"75746c2a-c901-4e78-bd59-0c6412c7f788":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":39.831500000000005,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 18 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:12 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '6ee08e52-0dc5-4c95-80d7-2f690fbad5ef' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 5 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:12.3395 
+ 消息内容 requestLog
+{"ElapsedTime":1.0072,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:12.3395 
+ 消息内容 requestLog
+{"ElapsedTime":1.7434,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:12.3545 
+ 消息内容 requestLog
+{"ElapsedTime":29.0532,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"0e577ec2-57da-42de-8468-54b3eddb0894":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":5.6384,"Url":"http://localhost:53608/api/HttpTest/1"},"7f01b0ee-5b0d-4eb3-a76f-5ef2d3cc6486":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":6.5897000000000006,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 1 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:12 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '512be3f2-7dff-49e7-94ab-2f70f6cc2eb8' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:12.6665 
+ 消息内容 requestLog
+{"ElapsedTime":1.2568000000000001,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:12.6665 
+ 消息内容 requestLog
+{"ElapsedTime":2.1245000000000003,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:12.6665 
+ 消息内容 requestLog
+{"ElapsedTime":33.3598,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"605493a8-68fc-4473-9818-49b18511fc92":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":4.5556,"Url":"http://localhost:53608/api/HttpTest/1"},"d0028dcb-dbd1-4c6a-95f4-ec31b749466e":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":10.559000000000001,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:12 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'ce1e684d-f98d-478d-b3e6-2f78c179af96' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 2 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:12.8325 
+ 消息内容 requestLog
+{"ElapsedTime":0.92370000000000008,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:12.8459 
+ 消息内容 requestLog
+{"ElapsedTime":1.8852,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:12.8459 
+ 消息内容 requestLog
+{"ElapsedTime":37.8632,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"90ad07ca-586f-4ba2-a6d4-2dd1d37dc8c3":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":3.9538,"Url":"http://localhost:53608/api/HttpTest/1"},"835816a2-deea-49ce-98ec-2aa83be2c714":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":9.7215,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:12 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'd373b4de-cd18-4405-a5f8-2ffa058fbf38' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 2 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:13.0014 
+ 消息内容 requestLog
+{"ElapsedTime":0.6741,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:13.0197 
+ 消息内容 requestLog
+{"ElapsedTime":1.2703,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:13.0197 
+ 消息内容 requestLog
+{"ElapsedTime":42.5206,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"e3e19297-1c03-4924-9cf9-02c5e3ed8da1":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":5.1603,"Url":"http://localhost:53608/api/HttpTest/1"},"6dd90b99-04f7-4075-9304-c451b24a0264":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":12.8846,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:12 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:12 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:12 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'ecdc4141-439f-4326-9b87-30417823719e' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:12 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:13.3406 
+ 消息内容 requestLog
+{"ElapsedTime":0.83690000000000009,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:13.3406 
+ 消息内容 requestLog
+{"ElapsedTime":1.3478,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:13.3556 
+ 消息内容 requestLog
+{"ElapsedTime":40.0745,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"ff9ce7c9-7aa1-4a61-8a74-e393dc56ed01":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":3.9869000000000003,"Url":"http://localhost:53608/api/HttpTest/1"},"bb2cddfe-d8de-4cb2-8be3-c947e297f6c7":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":8.6331,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:13 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'a1e07351-b296-427e-b56b-304f083a128c' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:13.5266 
+ 消息内容 requestLog
+{"ElapsedTime":1.2339,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:13.5266 
+ 消息内容 requestLog
+{"ElapsedTime":1.5983,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:13.5266 
+ 消息内容 requestLog
+{"ElapsedTime":35.571600000000004,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"75fb1560-1373-4758-8cb8-00f33c261c31":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":4.4549,"Url":"http://localhost:53608/api/HttpTest/1"},"a9189a71-6e96-4470-9744-1dca0f5d5433":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":7.2592000000000008,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 1 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:13 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'e7242d04-219f-46ba-9422-30892e794de8' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 51 
+
+
+
+ 时间 2017-06-23 15:57:13.7026 
+ 消息内容 requestLog
+{"ElapsedTime":0.93770000000000009,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:13.7156 
+ 消息内容 requestLog
+{"ElapsedTime":1.5507,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:13.7156 
+ 消息内容 requestLog
+{"ElapsedTime":42.5705,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"cc0006fe-78b3-4e9a-a259-5c3684f74f7b":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":6.1269,"Url":"http://localhost:53608/api/HttpTest/1"},"120f3fb8-9159-427c-bbec-c21514b21106":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":7.7906,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 1 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:13 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '1c72ac76-6298-4dae-99d3-30cd48920b24' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 2 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:14.0127 
+ 消息内容 requestLog
+{"ElapsedTime":1.379,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:14.0437 
+ 消息内容 requestLog
+{"ElapsedTime":1.5876000000000001,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:14.0437 
+ 消息内容 requestLog
+{"ElapsedTime":139.74200000000002,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"8f6ac141-9baf-4f6b-851e-61470437bcf8":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":34.1179,"Url":"http://localhost:53608/api/HttpTest/1"},"26a03b7d-f069-4255-a994-da35feaba3d0":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":30.3637,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 21 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:13 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:13 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '17d90669-b5f7-461b-8fec-30e118899628' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:13 +08:00\r\n 执行","-- 已在 12 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:13 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:13 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:14.2677 
+ 消息内容 requestLog
+{"ElapsedTime":2.1567000000000003,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:14.3197 
+ 消息内容 requestLog
+{"ElapsedTime":2.5155000000000003,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:14.3237 
+ 消息内容 requestLog
+{"ElapsedTime":150.0705,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"beaf5daa-46a0-4a3d-a0ce-6f8d719dc4cc":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":40.6824,"Url":"http://localhost:53608/api/HttpTest/1"},"fbfc9cca-fea5-49d9-bbe8-2ee6100354f2":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":52.463300000000004,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:14 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:14 +08:00\r\n 执行","-- 已在 8 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:14 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:14 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:14 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'ce0d04df-272b-4714-8260-318bf685e169' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:14 +08:00\r\n 执行","-- 已在 11 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:14 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:14 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:14.6119 
+ 消息内容 requestLog
+{"ElapsedTime":1.1252,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:14.6749 
+ 消息内容 requestLog
+{"ElapsedTime":2.5556,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:14.6749 
+ 消息内容 requestLog
+{"ElapsedTime":145.8414,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"b4d4cca0-1d01-49db-94ab-bf3fbdb9c5ac":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":29.932100000000002,"Url":"http://localhost:53608/api/HttpTest/1"},"4b03e28c-9fdf-4582-a98c-814fb73bb8f3":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":62.2017,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:14 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:14 +08:00\r\n 执行","-- 已在 10 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:14 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:14 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:14 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'fab42913-8a8f-4691-bfc2-319f31f40215' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:14 +08:00\r\n 执行","-- 已在 3 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:14 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:14 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:14.9451 
+ 消息内容 requestLog
+{"ElapsedTime":0.8887,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:15.0121 
+ 消息内容 requestLog
+{"ElapsedTime":2.9774000000000003,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:15.0121 
+ 消息内容 requestLog
+{"ElapsedTime":146.0831,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"94b5dfa4-5516-4a2e-82bf-81371b0b8db5":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":29.1143,"Url":"http://localhost:53608/api/HttpTest/1"},"77796be6-5294-4500-9168-39c913763eaa":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":66.406,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:14 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:14 +08:00\r\n 执行","-- 已在 5 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:14 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:14 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:14 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'd233cc30-52a2-4130-9140-31ec313f4832' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:14 +08:00\r\n 执行","-- 已在 11 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:14 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:14 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:15.2470 
+ 消息内容 requestLog
+{"ElapsedTime":0.926,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:15.2470 
+ 消息内容 requestLog
+{"ElapsedTime":1.5736,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:15.2610 
+ 消息内容 requestLog
+{"ElapsedTime":49.6664,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"e9c072e7-2f8c-430a-9c90-012f53ca8cb6":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":4.5692,"Url":"http://localhost:53608/api/HttpTest/1"},"d26877df-fd59-4c1c-b963-18b6d68ba7c9":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":10.3789,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 9 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:15 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'a374febb-6ef9-4481-867c-32c23ac29b48' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 4 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:15.5663 
+ 消息内容 requestLog
+{"ElapsedTime":0.89240000000000008,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:15.5863 
+ 消息内容 requestLog
+{"ElapsedTime":2.4175,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:15.5893 
+ 消息内容 requestLog
+{"ElapsedTime":38.3647,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"fe5ab812-b698-44d5-8325-3131a531cbda":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":5.4626,"Url":"http://localhost:53608/api/HttpTest/1"},"b4c99b61-5a4c-4d73-aca4-82ea21998f7b":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":14.8907,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:15 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '1a360b6e-40b8-4b0c-af78-32de47cb85bc' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:15.7778 
+ 消息内容 requestLog
+{"ElapsedTime":0.8598,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:15.7778 
+ 消息内容 requestLog
+{"ElapsedTime":1.6739000000000002,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 43 
+
+
+
+ 时间 2017-06-23 15:57:15.7778 
+ 消息内容 requestLog
+{"ElapsedTime":28.997700000000002,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"e6f7199d-c737-4e79-babf-228789502d57":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":3.7672000000000003,"Url":"http://localhost:53608/api/HttpTest/1"},"13c67553-ff65-4055-a15a-0a9119ee30f1":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":6.9205000000000005,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:15 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: 'a76d5456-7edc-40b0-955d-3314989d9620' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 1 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:15.9493 
+ 消息内容 requestLog
+{"ElapsedTime":0.84900000000000009,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:15.9663 
+ 消息内容 requestLog
+{"ElapsedTime":1.3524,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:15.9663 
+ 消息内容 requestLog
+{"ElapsedTime":42.3186,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"f550457d-6faf-4e18-99b5-a108056be081":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":5.6128,"Url":"http://localhost:53608/api/HttpTest/1"},"13e13b5a-b5ae-4ce4-8fff-9f5dddea6728":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":18.9663,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 2 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:15 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:15 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '31e9ccb4-7e44-4017-b0ea-33a8f48cc566' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:15 +08:00\r\n 执行","-- 已在 1 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:15 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:15 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:16.1380 
+ 消息内容 requestLog
+{"ElapsedTime":3.7061,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:16.2960 
+ 消息内容 requestLog
+{"ElapsedTime":2.0228,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 39 
+
+
+
+ 时间 2017-06-23 15:57:16.2960 
+ 消息内容 requestLog
+{"ElapsedTime":191.3357,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"b6ab4724-17cc-49a9-8d14-8a6063fe1eda":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":103.82090000000001,"Url":"http://localhost:53608/api/HttpTest/1"},"7ee90170-e778-4d26-8dd1-6cabca67b3a2":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":61.1548,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:16 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:16 +08:00\r\n 执行","-- 已在 1 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:16 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:16 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:16 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '198f8c9a-3a11-4b34-bc20-344f2f2b439b' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:16 +08:00\r\n 执行","-- 已在 1 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:16 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:16 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:16.4368 
+ 消息内容 requestLog
+{"ElapsedTime":3.5605,"URI":"/api/HttpTest/1","RequestParams":"","Result":"\"DELETE版本1\"","Status":200,"Headers":{"Content-Length":["0"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"DELETE"}
+ 线程ID 49 
+
+
+
+ 时间 2017-06-23 15:57:16.4478 
+ 消息内容 requestLog
+{"ElapsedTime":1.4042000000000001,"URI":"/api/HttpTest","RequestParams":"{}","Result":"\"POST版本1\"","Status":200,"Headers":{"Content-Length":["2"],"Content-Type":["application/json; charset=utf-8"],"Expect":["100-continue"],"Host":["localhost:53608"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null,"Method":"POST"}
+ 线程ID 61 
+
+
+
+ 时间 2017-06-23 15:57:16.4478 
+ 消息内容 requestLog
+{"ElapsedTime":38.6283,"URI":"/api/values","RequestParams":"","Result":"{\"Code\":400,\"SubCode\":\"code111111\",\"Msg\":\"test\"}","Status":200,"Headers":{"Cache-Control":["no-cache"],"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, sdch"],"Accept-Language":["zh-CN,zh;q=0.8"],"Cookie":["__atuvc=0%7C40%2C0%7C41%2C0%7C42%2C0%7C43%2C1%7C44; Nop.customer=1548c272-60b4-4d62-9c0d-ecfa7e1f65b1"],"Host":["localhost:53608"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],"mike-api-version":["1"]},"ChildrenRequests":{"3fb0176b-80db-4399-aa0c-47e2efa49e5a":{"Method":"DELETE","Params":"\"\"","Value":"\"DELETE版本1\"","ElapsedTime":9.8559,"Url":"http://localhost:53608/api/HttpTest/1"},"e3e051d7-7c93-4e6f-aa9f-a9efaf702165":{"Method":"POST","Params":"{}","Value":"\"POST版本1\"","ElapsedTime":11.065100000000001,"Url":"http://localhost:53608/api/HttpTest"}},"DBLogs":["已于 2017/6/23 15:57:16 +08:00\r\n 打开了连接","SELECT \r\n    [Extent1].[ID] AS [ID], \r\n    [Extent1].[NickName] AS [NickName], \r\n    [Extent1].[PhoneNum] AS [PhoneNum]\r\n    FROM [dbo].[Customers] AS [Extent1]","\r\n","-- 正在 2017/6/23 15:57:16 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: SqlDataReader\r\n","\r\n","已于 2017/6/23 15:57:16 +08:00\r\n 关闭了连接","已于 2017/6/23 15:57:16 +08:00\r\n 打开了连接","已于 2017/6/23 15:57:16 +08:00\r\n 启动了事务","DELETE [dbo].[Customers]\r\nWHERE ([ID] = @0)","\r\n","-- @0: '6a8546f1-820c-4cdf-b7f7-350f774601ca' (Type = Guid)\r\n","-- 正在 2017/6/23 15:57:16 +08:00\r\n 执行","-- 已在 0 毫秒内完成，结果为: 1\r\n","\r\n","已于 2017/6/23 15:57:16 +08:00\r\n 提交了事务","已于 2017/6/23 15:57:16 +08:00\r\n 关闭了连接"],"Exception":"   在 WebHost.Controllers.ValuesController.Get() 位置 E:\\WorkSpace\\120.27.161.80\\MF\\Tests\\WebHost\\Controllers\\ValuesController.cs:行号 58\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","Method":"GET"}
+ 线程ID 39 
