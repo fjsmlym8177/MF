@@ -12,6 +12,9 @@ using System.Web;
 
 namespace MF.Core.MiddleWare.Logging
 {
+    /// <summary>
+    /// 日志中间件
+    /// </summary>
     public class LoggingMiddleWare : OwinMiddleware
     {
         private ILogger _logger;
