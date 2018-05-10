@@ -15,7 +15,7 @@ namespace MF.Core.Utilities
     {
         //private static HttpClient _client = new HttpClient();
 
-        private static T LogAction<T>(string url, object data, string method, Dictionary<string, string> customerHeaders)
+        private static T LogAction<T>(string url, object data, string method, Dictionary<string, string> customerHeaders, string contentType = "application/json")
         {
             var request = WebRequest.CreateHttp(url);
             request.Timeout = 10000;
@@ -29,7 +29,7 @@ namespace MF.Core.Utilities
             }
 
             request.Method = method.ToUpper();
-            request.ContentType = "application/json;charset=UTF-8";
+            request.ContentType = $"{contentType}/json;charset=UTF-8";
 
             var @params = data.ToJson();
             var key = Guid.NewGuid().ToString();
@@ -40,9 +40,27 @@ namespace MF.Core.Utilities
 
             if (request.Method != "GET" && data != null)
             {
-                var reqStreamWriter = new StreamWriter(request.GetRequestStream());
-                reqStreamWriter.Write(@params);
-                reqStreamWriter.Close();
+             
+
+                if (contentType == "application/json")
+                {
+                    var reqStreamWriter = new StreamWriter(request.GetRequestStream());
+                    reqStreamWriter.Write(@params);
+                    reqStreamWriter.Close();
+                }
+                else
+                {
+                    var postData = Encoding.UTF8.GetBytes(data.ObjectToQuery());
+
+                    var reqStream = request.GetRequestStream();
+                    reqStream.Write(postData, 0, postData.Length);
+                    reqStream.Close();
+                    //reqStreamWriter.Write(postData, 0, postData.Length);
+                }
+
+
+
+       
             }
 
             var response = request.GetResponse() as HttpWebResponse;
@@ -78,7 +96,7 @@ namespace MF.Core.Utilities
             return returnResult;
         }
 
-        public static T Post<T>(string url, object postData, Dictionary<string, string> customerHeaders)
+        public static T Post<T>(string url, object postData, Dictionary<string, string> customerHeaders, string contentType = "application/json")
         {
 
             //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -98,7 +116,7 @@ namespace MF.Core.Utilities
             //ApiRequest.AddChildrenReponse(key, returnResult.ToJson(), wathch.Elapsed.TotalMilliseconds);
 
 
-            var returnResult = LogAction<T>(url, postData, "POST", customerHeaders);
+            var returnResult = LogAction<T>(url, postData, "POST", customerHeaders, contentType);
 
             return returnResult;
         }

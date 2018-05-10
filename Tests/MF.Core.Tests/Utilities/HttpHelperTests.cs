@@ -62,11 +62,20 @@ namespace MF.Core.Tests.Utilities
         [Test]
         public void PostCanUse()
         {
-            var result1 = HttpHelper.Post<object>(BaseUrl + "api/HttpTest", new { xxxx = "ccccccc", A = "Lym", B = "LRX" }, null);
-            Assert.AreEqual("POST版本1Lym LRX", result1);
+            //var result1 = HttpHelper.Post<object>(BaseUrl + "api/HttpTest", new { xxxx = "ccccccc", A = "Lym", B = "LRX" }, null);
+            //Assert.AreEqual("POST版本1Lym LRX", result1);
 
             //var result2 = HttpHelper.Post<object>(BaseUrl + "api/HttpTest", new { }, headers);
             //Assert.AreEqual("POST版本2", result2);
+
+            headers = new Dictionary<string, string>();
+            headers.Add("Authorization", "Basic OU9LV2JtVXJLcjoyZGRiZTc2NTkzOWZhZjI5ZDEwNTU3MDg3MzVjOGViNw==");
+            HttpHelper.Post<object>("https://open-api-sandbox.shop.ele.me/token", new {
+                grant_type = "authorization_code",
+                code = "Lym",
+                redirect_uri = "LRX",
+                client_id= "client_id"
+            }, headers, "application/x-www-form-urlencoded");
         }
 
 
