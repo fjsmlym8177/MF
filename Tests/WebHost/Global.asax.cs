@@ -1,4 +1,5 @@
-﻿using MF.Core.Infrastructure;
+﻿using MF.Core.Configuration;
+using MF.Core.Infrastructure;
 using MF.Data;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using WebHost.Infrastructure;
 using WebHost.Infrastructure.Mapping;
 
 namespace WebHost
@@ -25,6 +27,12 @@ namespace WebHost
             EngineContext.Initialize(false);
 
             //EngineContext.Current.Resolve<IDbContext<Guid>>().Set<Customer>().ToList();
+
+            ConfigLoader.SetConfig<TestConfig>("appsettings.json");
+
+            var config = ConfigLoader.LoadConfig<TestConfig>();
         }
+
+
     }
 }

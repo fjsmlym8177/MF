@@ -230,6 +230,7 @@
     <Compile Include="Infrastructure\Mapping\Customer.cs" />
     <Compile Include="Infrastructure\Mapping\CustomerMap.cs" />
     <Compile Include="Infrastructure\RabbitStartupTask.cs" />
+    <Compile Include="Infrastructure\TestConfig.cs" />
     <Compile Include="Infrastructure\WebHostDbContext.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -251,6 +252,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="NLog.config" />
+    <Content Include="Configs\appsettings.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

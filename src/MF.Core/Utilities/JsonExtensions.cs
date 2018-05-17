@@ -20,6 +20,5 @@ namespace MF.Core.Utilities
         {
             return JsonConvert.DeserializeObject<T>(str);
         }
-
     }
 }

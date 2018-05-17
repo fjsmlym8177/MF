@@ -29,7 +29,7 @@ namespace MF.Core.Utilities
             }
 
             request.Method = method.ToUpper();
-            request.ContentType = $"{contentType}/json;charset=UTF-8";
+            request.ContentType = $"{contentType};charset=UTF-8";
 
             var @params = data.ToJson();
             var key = Guid.NewGuid().ToString();

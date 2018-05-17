@@ -23,7 +23,7 @@ namespace WebHost.Infrastructure
         {
             builder.Register<IDbContext<Guid>>(c => new WebHostDbContext(new List<string> { "WebHost" }, "name=MyContext")).InstancePerRequest();
 
-            builder.RegisterGeneric(typeof(EfRepository<,>)).As(typeof(IRepository<,>)).InstancePerRequest();
+            builder.RegisterGeneric(typeof(EfRepository<,>)).As(typeof(IRepository<,>)).SingleInstance();
 
             //builder.Register<IRabbitContext>(c => new RabbitContext("amqp://mike:mike123@10.2.0.174:5672", "WebHost", new List<string> { "WebHost" })).InstancePerRequest();
 

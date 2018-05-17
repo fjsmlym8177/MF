@@ -32,7 +32,7 @@ namespace MF.Core.Rabbit
             _name = name;
             _assemblyNames = assemblyNames;
 
-            var conFactory = new ConnectionFactory { Uri = address, AutomaticRecoveryEnabled = true };
+            var conFactory = new ConnectionFactory { Uri = new Uri(address), AutomaticRecoveryEnabled = true };
             try
             {
                 _connection = conFactory.CreateConnection();
@@ -113,7 +113,7 @@ namespace MF.Core.Rabbit
             if (_subTasks.Any(p => p.Key == queueName))
                 throw new Exception("一个队列只能有一个线程解析！");
 
-            if (taskNumber<=0)
+            if (taskNumber <= 0)
                 taskNumber = 1;
 
             var threads = new List<Thread>();
