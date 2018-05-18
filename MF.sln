@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.Domain", "src\MF.Domain\MF.Domain.csproj", "{292A3077-CD35-46AF-8550-364A6BF2D091}"
 EndProject
@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D6406965-C
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MF.Core.Tests", "Tests\MF.Core.Tests\MF.Core.Tests.csproj", "{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PipelineTest", "PipelineTest\PipelineTest.csproj", "{931B8641-BD38-478C-BFC3-E30041FB2BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931B8641-BD38-478C-BFC3-E30041FB2BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931B8641-BD38-478C-BFC3-E30041FB2BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931B8641-BD38-478C-BFC3-E30041FB2BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931B8641-BD38-478C-BFC3-E30041FB2BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,39 +86,9 @@ Global
 		{5279AF16-1A1B-402F-A598-8A0761F019CB} = {45FFE335-B7A6-4FFC-BD8F-F1E4BC4D2428}
 		{52744FB4-E8A5-4DA2-9586-1D63783E64D6} = {8D5C42DF-6AE0-4810-A2B1-12E1671B8EE0}
 		{E0D08EB5-5BC9-4A44-8160-7EBAC76C92FB} = {8D5C42DF-6AE0-4810-A2B1-12E1671B8EE0}
+		{931B8641-BD38-478C-BFC3-E30041FB2BEE} = {8D5C42DF-6AE0-4810-A2B1-12E1671B8EE0}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://120.27.161.80:8080/tfs/allen
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = src\\MF.Domain\\MF.Domain.csproj
-		SccProjectName1 = src/MF.Domain
-		SccLocalPath1 = src\\MF.Domain
-		SccProjectUniqueName2 = src\\MF.Core\\MF.Core.csproj
-		SccProjectName2 = src/MF.Core
-		SccLocalPath2 = src\\MF.Core
-		SccProjectUniqueName3 = src\\MF.Core.Rabbit\\MF.Core.Rabbit.csproj
-		SccProjectName3 = src/MF.Core.Rabbit
-		SccLocalPath3 = src\\MF.Core.Rabbit
-		SccProjectUniqueName4 = src\\MF.Data\\MF.Data.csproj
-		SccProjectName4 = src/MF.Data
-		SccLocalPath4 = src\\MF.Data
-		SccProjectUniqueName5 = src\\MF.MiddleWare.Logging\\MF.MiddleWare.Logging.csproj
-		SccProjectTopLevelParentUniqueName5 = MF.sln
-		SccProjectName5 = src/MF.MiddleWare.Logging
-		SccLocalPath5 = src\\MF.MiddleWare.Logging
-		SccProjectUniqueName6 = src\\MF.MiddleWare.Exception\\MF.MiddleWare.Exception.csproj
-		SccProjectTopLevelParentUniqueName6 = MF.sln
-		SccProjectName6 = src/MF.MiddleWare.Exception
-		SccLocalPath6 = src\\MF.MiddleWare.Exception
-		SccProjectUniqueName7 = Tests\\WebHost\\WebHost.csproj
-		SccProjectTopLevelParentUniqueName7 = MF.sln
-		SccProjectName7 = Tests/WebHost
-		SccLocalPath7 = Tests\\WebHost
-		SccProjectUniqueName8 = Tests\\MF.Core.Tests\\MF.Core.Tests.csproj
-		SccProjectTopLevelParentUniqueName8 = MF.sln
-		SccProjectName8 = Tests/MF.Core.Tests
-		SccLocalPath8 = Tests\\MF.Core.Tests
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7945AC6F-0585-45B4-B6B1-30EFDC1D252D}
 	EndGlobalSection
 EndGlobal

@@ -145,6 +145,9 @@
     <Compile Include="MiddleWare\LoggingMiddleWare.cs" />
     <Compile Include="PagedList.cs" />
     <Compile Include="PagedQueryArgs.cs" />
+    <Compile Include="Pipeline\IPipelineContext.cs" />
+    <Compile Include="Pipeline\RedisPipelineConfig.cs" />
+    <Compile Include="Pipeline\RedisPipelineContext.cs" />
     <Compile Include="Redis\RedisManager.cs" />
     <Compile Include="ScrollPager.cs" />
     <Compile Include="Configuration\MikeConfig.cs" />
