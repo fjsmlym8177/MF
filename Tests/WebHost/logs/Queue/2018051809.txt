@@ -1,0 +1,244 @@
+
+
+
+ 时间 2018-05-18 09:10:14.7953 
+ 消息内容 Receive
+{"Id":"ae8949bf-aa2f-47cd-98ab-e540ad803dc0","PushName":"WebHost","PushTime":"2018-05-17 18:00:08","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:14:24.4514 
+ 消息内容 Receive
+{"Id":"4c295ea1-48e5-4138-b7dd-f29870f6858c","PushName":"WebHost","PushTime":"2018-05-18 09:11:53","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 24 
+
+
+
+ 时间 2018-05-18 09:15:38.9410 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"99fc9c9b-6914-4e4f-8ec5-498ced0e9263","PushName":"WebHost","PushTime":"2018-05-18 09:15:38","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 37 
+
+
+
+ 时间 2018-05-18 09:15:38.9410 
+ 消息内容 Receive
+{"Id":"99fc9c9b-6914-4e4f-8ec5-498ced0e9263","PushName":"WebHost","PushTime":"2018-05-18 09:15:38","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 24 
+
+
+
+ 时间 2018-05-18 09:25:24.6857 
+ 消息内容 Receive
+{"Id":"99fc9c9b-6914-4e4f-8ec5-498ced0e9263","PushName":"WebHost","PushTime":"2018-05-18 09:15:38","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:26:05.6519 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"b672b5a9-ea2d-442f-b97f-eb1b6b932202","PushName":"WebHost","PushTime":"2018-05-18 09:26:05","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 30 
+
+
+
+ 时间 2018-05-18 09:26:05.6519 
+ 消息内容 Receive
+{"Id":"b672b5a9-ea2d-442f-b97f-eb1b6b932202","PushName":"WebHost","PushTime":"2018-05-18 09:26:05","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:28:08.5452 
+ 消息内容 Receive
+{"Id":"b4b24ef3-8111-4176-a8f9-fed0f11aecab","PushName":"WebHost","PushTime":"2018-05-18 09:26:12","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 25 
+
+
+
+ 时间 2018-05-18 09:30:24.4096 
+ 消息内容 Receive
+{"Id":"d29995f5-1dca-43eb-9d0e-f187113b0393","PushName":"WebHost","PushTime":"2018-05-18 09:28:42","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:30:56.4150 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"ad72ce9a-c419-421d-84f5-e961873817bf","PushName":"WebHost","PushTime":"2018-05-18 09:30:56","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 34 
+
+
+
+ 时间 2018-05-18 09:30:56.4150 
+ 消息内容 Receive
+{"Id":"ad72ce9a-c419-421d-84f5-e961873817bf","PushName":"WebHost","PushTime":"2018-05-18 09:30:56","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:32:07.8514 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"d9d82d8d-8297-4009-9fad-702bbfa9caba","PushName":"WebHost","PushTime":"2018-05-18 09:32:07","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 46 
+
+
+
+ 时间 2018-05-18 09:32:07.8514 
+ 消息内容 Receive
+{"Id":"d9d82d8d-8297-4009-9fad-702bbfa9caba","PushName":"WebHost","PushTime":"2018-05-18 09:32:07","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:32:14.0984 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"7f6e31c5-35d6-4fa3-b4c4-3f89d508911e","PushName":"WebHost","PushTime":"2018-05-18 09:32:14","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 32 
+
+
+
+ 时间 2018-05-18 09:32:14.0984 
+ 消息内容 Receive
+{"Id":"7f6e31c5-35d6-4fa3-b4c4-3f89d508911e","PushName":"WebHost","PushTime":"2018-05-18 09:32:14","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:37:51.7048 
+ 消息内容 Receive
+{"Id":"7f6e31c5-35d6-4fa3-b4c4-3f89d508911e","PushName":"WebHost","PushTime":"2018-05-18 09:32:14","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 73 
+
+
+
+ 时间 2018-05-18 09:40:15.6285 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"9561ed13-0f24-414a-9222-4a6492ad416f","PushName":"WebHost","PushTime":"2018-05-18 09:40:15","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 28 
+
+
+
+ 时间 2018-05-18 09:40:15.6285 
+ 消息内容 Receive
+{"Id":"9561ed13-0f24-414a-9222-4a6492ad416f","PushName":"WebHost","PushTime":"2018-05-18 09:40:15","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-18 09:40:23.9990 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"f83964d8-da18-412a-b6e3-f4193b1b6b7e","PushName":"WebHost","PushTime":"2018-05-18 09:40:23","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 33 
+
+
+
+ 时间 2018-05-18 09:40:23.9990 
+ 消息内容 Receive
+{"Id":"f83964d8-da18-412a-b6e3-f4193b1b6b7e","PushName":"WebHost","PushTime":"2018-05-18 09:40:23","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-18 09:40:26.1307 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"fd380fef-940c-4681-a354-b0a63c0fce18","PushName":"WebHost","PushTime":"2018-05-18 09:40:26","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 35 
+
+
+
+ 时间 2018-05-18 09:40:26.1307 
+ 消息内容 Receive
+{"Id":"fd380fef-940c-4681-a354-b0a63c0fce18","PushName":"WebHost","PushTime":"2018-05-18 09:40:26","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-18 09:40:26.9108 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"a1c87e4b-2d42-468c-8267-3ec4f86a2172","PushName":"WebHost","PushTime":"2018-05-18 09:40:26","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 37 
+
+
+
+ 时间 2018-05-18 09:40:26.9108 
+ 消息内容 Receive
+{"Id":"a1c87e4b-2d42-468c-8267-3ec4f86a2172","PushName":"WebHost","PushTime":"2018-05-18 09:40:26","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-18 09:40:27.0953 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"ac6e009d-73c0-4d48-8785-e4ce54921bca","PushName":"WebHost","PushTime":"2018-05-18 09:40:27","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 39 
+
+
+
+ 时间 2018-05-18 09:40:27.0953 
+ 消息内容 Receive
+{"Id":"ac6e009d-73c0-4d48-8785-e4ce54921bca","PushName":"WebHost","PushTime":"2018-05-18 09:40:27","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-18 09:40:27.2647 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"c879c57a-f584-4fce-963a-946728450fb4","PushName":"WebHost","PushTime":"2018-05-18 09:40:27","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 41 
+
+
+
+ 时间 2018-05-18 09:40:27.2647 
+ 消息内容 Receive
+{"Id":"c879c57a-f584-4fce-963a-946728450fb4","PushName":"WebHost","PushTime":"2018-05-18 09:40:27","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-18 09:40:39.3945 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"294a9701-6f44-4472-94a5-a2804543fd1c","PushName":"WebHost","PushTime":"2018-05-18 09:40:39","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 30 
+
+
+
+ 时间 2018-05-18 09:40:39.3945 
+ 消息内容 Receive
+{"Id":"294a9701-6f44-4472-94a5-a2804543fd1c","PushName":"WebHost","PushTime":"2018-05-18 09:40:39","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-18 09:41:51.8182 
+ 消息内容 Receive
+{"Id":"294a9701-6f44-4472-94a5-a2804543fd1c","PushName":"WebHost","PushTime":"2018-05-18 09:40:39","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 
+
+
+
+ 时间 2018-05-18 09:43:33.2463 
+ 消息内容 Send
+消息发送成功：exchange_routingKey：AllenTestAllenTestQueue
+message：{"Id":"13a8f545-8eda-4216-a113-9d15ae43cce0","PushName":"WebHost","PushTime":"2018-05-18 09:43:33","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 14 
+
+
+
+ 时间 2018-05-18 09:43:33.2463 
+ 消息内容 Receive
+{"Id":"13a8f545-8eda-4216-a113-9d15ae43cce0","PushName":"WebHost","PushTime":"2018-05-18 09:43:33","Data":{"Name":"Age","Age":"Name"},"Type":"1"}
+ 线程ID 23 

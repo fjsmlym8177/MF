@@ -25,7 +25,7 @@ namespace WebHost.Infrastructure
 
             builder.RegisterGeneric(typeof(EfRepository<,>)).As(typeof(IRepository<,>)).SingleInstance();
 
-            //builder.Register<IRabbitContext>(c => new RabbitContext("amqp://mike:mike123@10.2.0.174:5672", "WebHost", new List<string> { "WebHost" })).InstancePerRequest();
+            builder.Register<IRabbitContext>(c => new RabbitContext("amqp://admin:123456@192.168.0.145:5672", "WebHost", new List<string> { "WebHost" })).InstancePerRequest();
 
             builder.RegisterType<NLogger>().As<ILogger>().SingleInstance();
 

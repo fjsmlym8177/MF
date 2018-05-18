@@ -1,9 +1,12 @@
-﻿using System;
+﻿using MF.Core.Infrastructure;
+using MF.Core.Rabbit;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebHost.Infrastructure;
 
 namespace WebHost.Controllers
 {
@@ -28,6 +31,13 @@ namespace WebHost.Controllers
         // POST api/values
         public string Post(TestClass dto)
         {
+            EngineContext.Current.Resolve<IRabbitContext>().Publish("AllenTest", "AllenTestQueue", "1", new EventData()
+            {
+                Age = "Name",
+                Name = "Age"
+            });
+
+
             return "POST版本" + version + dto.A + " " + dto.B;
         }
 

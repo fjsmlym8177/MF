@@ -6,13 +6,20 @@ using System.Web;
 
 namespace WebHost.Infrastructure
 {
-    public class Class1 : IMessageEventHandler
+    public class EventDataHandler : IMessageEventHandler<EventData>
     {
-        public string EventName => "mike.test_lym";
+        public string EventName => "1";
 
-        public void Handler(string data)
+        public void Handler(EventData data)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Test");
         }
+    }
+
+    public class EventData
+    {
+        public string Name { get; set; }
+
+        public string Age { get; set; }
     }
 }

@@ -47,7 +47,7 @@ namespace MF.Core.Rabbit
             }
         }
 
-        public void Publish(string exchengeName, string routeKey, object dataPack, int expiration = 0)
+        public void Publish(string exchengeName, string routeKey, string type, object dataPack, int expiration = 0)
         {
             var message = new RabbitMQMessage<Object>()
             {
@@ -55,7 +55,7 @@ namespace MF.Core.Rabbit
                 Id = Guid.NewGuid(),
                 PushTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                 PushName = _name,
-                Expiration = expiration
+                Type = type
             };
             var tuple = new Tuple<string, string, RabbitMQMessage<Object>>(exchengeName, routeKey, message);
             DataQueue.Enqueue(tuple);
@@ -97,11 +97,11 @@ namespace MF.Core.Rabbit
             AddQueueTask(queueName, (sender, e) =>
              {
                  var checkName = string.Format("{0}_{1}", e.Exchange, e.RoutingKey);
-                 var message = Encoding.UTF8.GetString(e.Body).ToDeserialize<dynamic>();
+                 var message = Encoding.UTF8.GetString(e.Body).ToDeserialize<RabbitMQMessage<Object>>();
 
                  MessageHandler.Execute(_assemblyNames, new ExecuteMessage()
                  {
-                     Type = checkName,
+                     Type = message.Type,
                      Data = message.Data.ToString()
                  });
 
@@ -132,7 +132,6 @@ namespace MF.Core.Rabbit
                         //Task.Run(() =>
                         //{
                         EngineContext.Current.Resolve<ILogger>().InsertQueueLog("Receive", Encoding.UTF8.GetString(e.Body));
-                        //var checkName = string.Format("{0}_{1}", e.Exchange, e.RoutingKey);
                         var consumer = sender as EventingBasicConsumer;
                         try
                         {

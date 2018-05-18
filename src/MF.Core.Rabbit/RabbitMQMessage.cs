@@ -14,8 +14,8 @@ namespace MF.Core.Rabbit
 
         public string PushTime { get; set; }
 
-        public int Expiration { get; set; }
-
         public T Data { get; set; }
+
+        public string Type { get; set; }
     }
 }

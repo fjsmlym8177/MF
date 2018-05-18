@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MF.Core.Rabbit
 {
-    public interface IMessageEventHandler
+    public interface IMessageEventHandler<T>
     {
 
         /// <summary>
@@ -14,6 +14,6 @@ namespace MF.Core.Rabbit
         /// </summary>
         string EventName { get; }
 
-        void Handler(string data);
+        void Handler(T data);
     }
 }

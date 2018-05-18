@@ -15,7 +15,7 @@ namespace WebHost.Infrastructure
 
         public void Execute()
         {
-            //var rabitContext = EngineContext.Current.Resolve<IRabbitContext>();
+            var rabitContext = EngineContext.Current.Resolve<IRabbitContext>();
 
 
             //rabitContext.Publish("mike.test", "lym", "test");
@@ -23,7 +23,7 @@ namespace WebHost.Infrastructure
             //rabitContext.Publish("mike.test", "lym", "test");
             //rabitContext.Publish("mike.test", "lym", "test");
 
-            //rabitContext.AutoRegister("mike.testqueue",10);
+            rabitContext.AutoRegister("AllenTestQueue", 1);
 
 
         }
