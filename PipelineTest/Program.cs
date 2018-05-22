@@ -15,12 +15,14 @@ namespace PipelineTest
 
             var list = new List<TestClass>();
 
+            var random = new Random(10);
+
             //var ran
             for (int i = 0; i < 1000000; i++)
             {
                 list.Add(new TestClass()
                 {
-                    Age = i + 1,
+                    Age = random.Next(100),
                     Name = "allen" + i
                 });
             }
@@ -46,7 +48,7 @@ namespace PipelineTest
                 "MF:PipelineTest:9",
            }, executeList =>
             {
-                return "分组结果为" + string.Join(",", executeList.Select(p => p.Age).Distinct());
+                return "分组结果为" + string.Join(",", executeList.Select(p => p.Data.Age).Distinct());
             });
 
             Console.ReadLine();

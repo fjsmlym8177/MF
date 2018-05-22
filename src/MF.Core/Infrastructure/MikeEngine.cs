@@ -53,7 +53,9 @@ namespace MF.Core.Infrastructure
             //dependencies
             var typeFinder = new WebAppTypeFinder();
             builder = new ContainerBuilder();
+       
             builder.RegisterInstance(config).As<MikeConfig>().SingleInstance();
+
             builder.RegisterInstance(this).As<IEngine>().SingleInstance();
             builder.RegisterInstance(typeFinder).As<ITypeFinder>().SingleInstance();
             builder.Update(container);
@@ -87,6 +89,11 @@ namespace MF.Core.Infrastructure
         /// <param name="config">Config</param>
         public void Initialize(MikeConfig config)
         {
+            if (config == null)
+            {
+                config = new MikeConfig();
+            }
+
             //register dependencies
             RegisterDependencies(config);
 

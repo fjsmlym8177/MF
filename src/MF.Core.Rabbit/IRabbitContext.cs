@@ -13,6 +13,8 @@ namespace MF.Core.Rabbit
 
         void AddQueueTask(string queueName, Action<object, BasicDeliverEventArgs> action, int taskNumber = 1);
 
-        void Publish(string exchengeName, string routeKey, string type, object dataPack, int expiration = 0);
+        void Publish(string exchengeName, string routeKey, string type, object dataPack);
+
+        void PublishDelay(string exchengeName, string routeKey, string type, object dataPack, int expiration = 0);
     }
 }

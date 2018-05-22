@@ -70,5 +70,9 @@ namespace MF.Data
         /// Gets or sets a value indicating whether auto detect changes setting is enabled (used in EF)
         /// </summary>
         bool AutoDetectChangesEnabled { get; set; }
+
+
+
+        void BulkSaveChange();
     }
 }

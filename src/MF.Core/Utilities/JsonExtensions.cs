@@ -18,6 +18,11 @@ namespace MF.Core.Utilities
 
         public static T ToDeserialize<T>(this string str)
         {
+            if (typeof(T)==typeof(string))
+            {
+                return (T)(str as object);
+            }     
+
             return JsonConvert.DeserializeObject<T>(str);
         }
     }

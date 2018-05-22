@@ -8,8 +8,9 @@ namespace MF.Core.Pipeline
 {
     public interface IPipelineContext
     {
+        void AddRange<T>(IList<T> list, string pipelineName);
         void AddRange<T>(IList<T> list, Func<T, string> pipelineName);
 
-        void ExecutePipeline<T>(IList<string> pipelineNames, Func<IList<T>, string> func);
+        void ExecutePipeline<T>(IList<string> pipelineNames, Func<IList<PipelineItem<T>>, string> func);
     }
 }

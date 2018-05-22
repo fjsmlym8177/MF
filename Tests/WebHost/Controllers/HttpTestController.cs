@@ -31,11 +31,11 @@ namespace WebHost.Controllers
         // POST api/values
         public string Post(TestClass dto)
         {
-            EngineContext.Current.Resolve<IRabbitContext>().Publish("AllenTest", "AllenTestQueue", "1", new EventData()
+            EngineContext.Current.Resolve<IRabbitContext>().PublishDelay("AllenTest", "AllenTestQueue", "1", new EventData()
             {
                 Age = "Name",
                 Name = "Age"
-            });
+            },10000);
 
 
             return "POST版本" + version + dto.A + " " + dto.B;

@@ -13,6 +13,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Z.EntityFramework.Extensions;
 
 namespace MF.Data
 {
@@ -24,7 +25,7 @@ namespace MF.Data
 
         static MFDbContext()
         {
-
+            Z.EntityFramework.Extensions.LicenseManager.AddLicense("27;100-ZDDX", "08504968B946549685DA74E99693FC0E");
             Database.SetInitializer<MFDbContext<TKey>>(null);
 
         }
@@ -236,6 +237,16 @@ namespace MF.Data
                 throw new ArgumentNullException("entity");
 
             ((IObjectContextAdapter)this).ObjectContext.Detach(entity);
+        }
+
+        //public void BulkInsert2(IList<BaseEntity<TKey>> entities)
+        //{
+        //   this.BulkInsert<>
+        //}
+
+        public void BulkSaveChange()
+        {
+            DbContextExtensions.BulkSaveChanges(this);
         }
 
         #endregion

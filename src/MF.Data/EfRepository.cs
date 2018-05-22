@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MF.Data
 {
-    public class EfRepository<T,T2> : IRepository<T,T2> where T : BaseEntity<T2>
+    public class EfRepository<T, T2> : IRepository<T, T2> where T : BaseEntity<T2>
     {
         #region Fields
 
@@ -77,7 +77,7 @@ namespace MF.Data
 
 
 
-               
+
                 this.Entities.Add(entity);
 
                 //this._context.SaveChanges();
@@ -102,6 +102,8 @@ namespace MF.Data
                 foreach (var entity in entities)
                     this.Entities.Add(entity);
 
+                DbContextExtensions.BulkInsert(_context as DbContext, entities);
+   
                 //this._context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
@@ -140,6 +142,7 @@ namespace MF.Data
                 if (entities == null)
                     throw new ArgumentNullException("entities");
 
+                DbContextExtensions.BulkUpdate(_context as DbContext, entities);
                 //this._context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
@@ -180,8 +183,10 @@ namespace MF.Data
                 if (entities == null)
                     throw new ArgumentNullException("entities");
 
-                foreach (var entity in entities)
-                    this.Entities.Remove(entity);
+                //foreach (var entity in entities)
+                //    this.Entities.Remove(entity);
+
+                DbContextExtensions.BulkDelete(_context as DbContext, entities);
 
                 //this._context.SaveChanges();
             }
