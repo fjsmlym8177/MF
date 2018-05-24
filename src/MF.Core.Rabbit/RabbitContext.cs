@@ -36,7 +36,7 @@ namespace MF.Core.Rabbit
             var conFactory = new ConnectionFactory() { Uri = new Uri(address), AutomaticRecoveryEnabled = true };
             try
             {
-                _connection = conFactory.CreateConnection();
+                _connection = conFactory.CreateConnection(name);
 
                 if (_sendMsgThread != null)
                     _sendMsgThread.Abort();

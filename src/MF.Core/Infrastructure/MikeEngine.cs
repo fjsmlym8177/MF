@@ -1,5 +1,4 @@
 ﻿using Autofac;
-using Autofac.Integration.WebApi;
 using MF.Core.Configuration;
 using MF.Core.Infrastructure.DependencyManagement;
 using System;
@@ -7,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
 
 namespace MF.Core.Infrastructure
 {
@@ -24,24 +22,13 @@ namespace MF.Core.Infrastructure
         /// <summary>
         /// Run startup tasks
         /// </summary>
-        protected virtual void RunStartupTasks()
-        {
-            var typeFinder = _containerManager.Resolve<ITypeFinder>();
-            var startUpTaskTypes = typeFinder.FindClassesOfType<IStartupTask>();
-            var startUpTasks = new List<IStartupTask>();
-            foreach (var startUpTaskType in startUpTaskTypes)
-                startUpTasks.Add((IStartupTask)Activator.CreateInstance(startUpTaskType));
-            //sort
-            startUpTasks = startUpTasks.AsQueryable().OrderBy(st => st.Order).ToList();
-            foreach (var startUpTask in startUpTasks)
-                startUpTask.Execute();
-        }
+
 
         /// <summary>
         /// Register dependencies
         /// </summary>
         /// <param name="config">Config</param>
-        protected virtual void RegisterDependencies(MikeConfig config)
+        protected virtual void RegisterDependencies()
         {
             var builder = new ContainerBuilder();
             var container = builder.Build();
@@ -51,10 +38,10 @@ namespace MF.Core.Infrastructure
             //because Build() or Update() method can only be called once on a ContainerBuilder.
 
             //dependencies
-            var typeFinder = new WebAppTypeFinder();
+            var typeFinder = new AppDomainTypeFinder();
             builder = new ContainerBuilder();
-       
-            builder.RegisterInstance(config).As<MikeConfig>().SingleInstance();
+
+            //builder.RegisterInstance(config).As<MikeConfig>().SingleInstance();
 
             builder.RegisterInstance(this).As<IEngine>().SingleInstance();
             builder.RegisterInstance(typeFinder).As<ITypeFinder>().SingleInstance();
@@ -69,14 +56,14 @@ namespace MF.Core.Infrastructure
             //sort
             drInstances = drInstances.AsQueryable().OrderBy(t => t.Order).ToList();
             foreach (var dependencyRegistrar in drInstances)
-                dependencyRegistrar.Register(builder, typeFinder, config);
+                dependencyRegistrar.Register(builder, typeFinder);
             builder.Update(container);
 
             //set dependency resolver
             //DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
 
-            GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
+            //GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }
 
         #endregion
@@ -87,22 +74,12 @@ namespace MF.Core.Infrastructure
         /// Initialize components and plugins in the nop environment.
         /// </summary>
         /// <param name="config">Config</param>
-        public void Initialize(MikeConfig config)
+        public void Initialize()
         {
-            if (config == null)
-            {
-                config = new MikeConfig();
-            }
-
             //register dependencies
-            RegisterDependencies(config);
+            RegisterDependencies();
 
-            //startup tasks
-            if (!config.IgnoreStartupTasks)
-            {
-                RunStartupTasks();
-            }
-
+            //RunStartupTasks();
         }
 
         /// <summary>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MF.Core.Configuration
 {
-    public abstract class IConfig
+    public interface IConfig
     {
     }
 }

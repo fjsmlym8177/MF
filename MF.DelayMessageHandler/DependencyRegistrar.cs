@@ -16,13 +16,13 @@ namespace MF.DelayMessageHandler
     {
         public int Order => 0;
 
-        public void Register(ContainerBuilder builder, ITypeFinder typeFinder, MikeConfig config)
+        public void Register(ContainerBuilder builder, ITypeFinder typeFinder)
         {
             var setting = ConfigLoader.LoadConfig<Config>();
 
             builder.Register<IRabbitContext>(c => new RabbitContext(setting.MQConn, "MF.DelayMessageHandler", new List<string> { "MF.DelayMessageHandler" })).SingleInstance();
 
-            builder.RegisterType<NLogger>().As<ILogger>().SingleInstance();
+            //builder.RegisterType<NLogger>().As<ILogger>().SingleInstance();
         }
     }
 }

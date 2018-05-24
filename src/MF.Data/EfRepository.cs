@@ -1,5 +1,5 @@
 ﻿
-using MF.Domain;
+using MF.Core;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

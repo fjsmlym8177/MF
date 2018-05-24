@@ -21,14 +21,13 @@ namespace MF.Core.Infrastructure
         /// </summary>
         /// <param name="forceRecreate">Creates a new factory instance even though the factory has been previously initialized.</param>
         [MethodImpl(MethodImplOptions.Synchronized)]
-        public static IEngine Initialize(bool forceRecreate)
+        public static IEngine Initialize(IEngine engine)
         {
-            if (Singleton<IEngine>.Instance == null || forceRecreate)
+            if (Singleton<IEngine>.Instance == null)
             {
-                Singleton<IEngine>.Instance = new MikeEngine();
+                Singleton<IEngine>.Instance = engine;
 
-                var config = ConfigurationManager.GetSection("MikeConfig") as MikeConfig;
-                Singleton<IEngine>.Instance.Initialize(config);
+                Singleton<IEngine>.Instance.Initialize();
             }
             return Singleton<IEngine>.Instance;
         }
@@ -56,7 +55,8 @@ namespace MF.Core.Infrastructure
             {
                 if (Singleton<IEngine>.Instance == null)
                 {
-                    Initialize(false);
+                    Initialize(new MikeEngine());
+                    //Replace();
                 }
                 return Singleton<IEngine>.Instance;
             }
@@ -65,4 +65,3 @@ namespace MF.Core.Infrastructure
         #endregion
     }
 }
- 

@@ -20,7 +20,7 @@ namespace WebHost.Infrastructure
     {
         public int Order => 0;
 
-        public void Register(ContainerBuilder builder, ITypeFinder typeFinder, MikeConfig config)
+        public void Register(ContainerBuilder builder, ITypeFinder typeFinder)
         {
             builder.Register<IDbContext<Guid>>(c => new WebHostDbContext(new List<string> { "WebHost" }, "name=MyContext")).InstancePerRequest();
 
@@ -31,7 +31,7 @@ namespace WebHost.Infrastructure
             builder.Register<IPipelineContext>(c => new RedisPipelineContext(new RedisManager("192.168.0.145"), new RedisPipelineConfig())).SingleInstance();
 
 
-            builder.RegisterType<NLogger>().As<ILogger>().SingleInstance();
+            //builder.RegisterType<NLogger>().As<ILogger>().SingleInstance();
 
 
             //var redisManager = new RedisManager(config.RedisConnection);
@@ -39,7 +39,7 @@ namespace WebHost.Infrastructure
 
             //builder.Register<ILockManager>(p => new RedisLockManager(redisManager, config.RedisLockDB)).SingleInstance();
 
-            builder.RegisterApiControllers(typeFinder.GetAssemblies().ToArray()).InstancePerRequest();
+            //builder.RegisterApiControllers(typeFinder.GetAssemblies().ToArray()).InstancePerRequest();
         }
     }
 }

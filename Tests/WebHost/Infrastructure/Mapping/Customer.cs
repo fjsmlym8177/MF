@@ -1,4 +1,4 @@
-﻿using MF.Domain;
+﻿using MF.Core;
 using System;
 
 namespace WebHost.Infrastructure.Mapping

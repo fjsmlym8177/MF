@@ -19,7 +19,7 @@ namespace MF.Core.Infrastructure.DependencyManagement
         /// <param name="builder">Container builder</param>
         /// <param name="typeFinder">Type finder</param>
         /// <param name="config">Config</param>
-        void Register(ContainerBuilder builder, ITypeFinder typeFinder, MikeConfig config);
+        void Register(ContainerBuilder builder, ITypeFinder typeFinder);
 
         /// <summary>
         /// Order of this dependency registrar implementation

@@ -7,8 +7,7 @@ using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using System.Web.Http.Routing;
 using System.Web.Http.Dispatcher;
-using MF.Core.WebFramework;
-using MF.Core.WebFramework.Attributes;
+using MF.Core.Web.WebFramework.Attributes;
 
 namespace WebHost
 {
@@ -34,7 +33,7 @@ namespace WebHost
             );
    
             //config.Services.Replace(typeof(IHttpControllerSelector), new VersionControllerSelector(config));
-            config.Filters.Add(new MFExceptionAttribute());
+            //config.Filters.Add(new MFExceptionAttribute());
         }
     }
 }

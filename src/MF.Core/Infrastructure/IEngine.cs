@@ -25,7 +25,7 @@ namespace MF.Core.Infrastructure
         /// Initialize components and plugins in the nop environment.
         /// </summary>
         /// <param name="config">Config</param>
-        void Initialize(MikeConfig config);
+        void Initialize();
 
         /// <summary>
         /// Resolve dependency

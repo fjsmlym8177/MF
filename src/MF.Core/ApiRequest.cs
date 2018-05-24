@@ -21,9 +21,9 @@ namespace MF.Core
         public string URI { get; set; }
         public double ElapsedTime { get; set; }
         //public string ActionName { get; set; }    
-        public string Method { get; internal set; }
+        public string Method { get;  set; }
         public string RequestParams { get; set; }
-        public string QueryString { get; internal set; }
+        public string QueryString { get;  set; }
         public string Result { get; set; }
         public int Status { get; set; }
 
@@ -81,7 +81,7 @@ namespace MF.Core
             }
             else
             {
-                EngineContext.Current.Resolve<ILogger>().InsertDBLog("EF", log);
+                //EngineContext.Current.Resolve<ILogger>().InsertDBLog("EF", log);
             }
         }
     }

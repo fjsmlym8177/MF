@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 using System.Linq.Expressions;
 
 namespace MF.Core
@@ -97,12 +96,22 @@ namespace MF.Core
 
     public static class PagedListExtensions
     {
-        public async static Task<PagedList<T>> ToPagedAsync<T>(this IOrderedQueryable<T> query, int pageIndex, int pageSize)
+        //public async static Task<PagedList<T>> ToPagedAsync<T>(this IOrderedQueryable<T> query, int pageIndex, int pageSize)
+        //{
+        //    var pagedList = new PagedList<T>();
+
+        //    var count = await query.CountAsync();
+        //    var source = await query.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
+
+        //    return new PagedList<T>(source, pageIndex, pageSize, count);
+        //}
+
+        public static PagedList<T> ToPaged<T>(this IOrderedQueryable<T> query, int pageIndex, int pageSize)
         {
             var pagedList = new PagedList<T>();
 
-            var count = await query.CountAsync();
-            var source = await query.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
+            var count = query.Count();
+            var source = query.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
 
             return new PagedList<T>(source, pageIndex, pageSize, count);
         }

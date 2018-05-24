@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Autofac.Core.Lifetime;
-using Autofac.Integration.WebApi;
 using MF.Core.Exceptions;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using System.Net.Http.Formatting;
 using System.Net.Http;
 
 namespace MF.Core.Infrastructure.DependencyManagement
@@ -204,11 +202,13 @@ namespace MF.Core.Infrastructure.DependencyManagement
         {
             try
             {
+                //return AutofacDependencyResolver.Current.RequestLifetimeScope;
+
                 //HttpRequestMessage
                 //return AutofacDependencyResolver
-                if (HttpContext.Current != null)
-                    //    return AutofacDependencyResolver.Current.RequestLifetimeScope;
-                    return (HttpContext.Current.Items["MS_HttpRequestMessage"] as HttpRequestMessage).GetDependencyScope().GetRequestLifetimeScope();
+                //if (HttpContext.Current != null)
+                //    //    return AutofacDependencyResolver.Current.RequestLifetimeScope;
+                //    return (HttpContext.Current.Items["MS_HttpRequestMessage"] as HttpRequestMessage).GetDependencyScope().GetRequestLifetimeScope();
                 //ILifetimeScopeProvider.RequestLifetime
 
                 //when such lifetime scope is returned, you should be sure that it'll be disposed once used (e.g. in schedule tasks)

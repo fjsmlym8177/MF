@@ -1,4 +1,5 @@
-﻿using MF.Core.Configuration;
+﻿using MF.Core;
+using MF.Core.Configuration;
 using MF.Core.Infrastructure;
 using MF.Core.Rabbit;
 using MF.Core.Utilities;
@@ -17,12 +18,15 @@ namespace MF.DelayMessageHandler
             ConfigLoader.SetConfig<Config>("appsettings.json");
             var config = ConfigLoader.LoadConfig<Config>();
 
+            AppBoot.Instance
+                   .UseDeault();
+
             var context = EngineContext.Current.Resolve<IRabbitContext>();
 
             context.AddQueueTask("DelayTransfer", (obj, eventArgs) =>
              {
                  var message = Encoding.UTF8.GetString(eventArgs.Body).ToDeserialize<RabbitMQDelayMessage<Object>>();
-             
+
                  Console.WriteLine($"接收到延迟任务：");
                  Console.WriteLine($"NextExchange: { message.NextExchange}");
                  Console.WriteLine($"NextRouteKey:{ message.NextRouteKey}");

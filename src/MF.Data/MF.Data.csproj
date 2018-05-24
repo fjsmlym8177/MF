@@ -9,12 +9,13 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MF.Data</RootNamespace>
     <AssemblyName>MF.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,10 +71,6 @@
     <ProjectReference Include="..\MF.Core\MF.Core.csproj">
       <Project>{481E5055-F694-44DE-BED6-44F009BC823A}</Project>
       <Name>MF.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MF.Domain\MF.Domain.csproj">
-      <Project>{292a3077-cd35-46af-8550-364a6bf2d091}</Project>
-      <Name>MF.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,7 +1,4 @@
 ﻿using MF.Core;
-using MF.Core.Infrastructure;
-using MF.Core.Logging;
-using MF.Domain;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,9 +8,6 @@ using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Z.EntityFramework.Extensions;
 
 namespace MF.Data
 {
@@ -35,11 +29,11 @@ namespace MF.Data
         {
             _nameSpaces = nameSpaces;
             this.Configuration.LazyLoadingEnabled = true;
-            this.Database.Log = (log) =>
-            {
-                //EngineContext.Current.Resolve<ILogger>().InsertDBLog("EF", log);
-                ApiRequest.AddDBLog(log);
-            };
+            //this.Database.Log = (log) =>
+            //{
+            //    //EngineContext.Current.Resolve<ILogger>().InsertDBLog("EF", log);
+            //    //ApiRequest.AddDBLog(log);
+            //};
         }
 
         #endregion
