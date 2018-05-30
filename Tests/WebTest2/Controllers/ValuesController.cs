@@ -1,4 +1,5 @@
-﻿using MF.Core.Exceptions;
+﻿using MF.Core;
+using MF.Core.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,19 +18,30 @@ namespace WebTest2.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            return "value";
+            return Ok(new ApiResponse(new
+            {
+                Id = Guid.NewGuid()
+            }));
+
+            //return "value";
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]string value)
         {
+
+
+            var request = new List<string> { "11111", "2222", "3333" }.AsQueryable().OrderByDescending(p => p).ToPaged(1, 1);
+
+            return Ok(new ApiResponsePager<string>(request));
         }
 
         // PUT api/values/5
         public void Put(int id, [FromBody]string value)
         {
+
             throw new MikeException("xxx");
         }
 

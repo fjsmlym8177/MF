@@ -47,14 +47,18 @@ namespace MF.Core
     {
         public ApiResponsePager(IPagedList<T> pagerData)
         {
+            this.Data = new Pager<T>();
             this.Data.TotalCount = pagerData.TotalCount;
             this.Data.Data = pagerData;
+            this.Code = CodeEnum.Success;
         }
 
         public ApiResponsePager(IList<T> data, int totalCount)
         {
+            this.Data = new Pager<T>();
             this.Data.Data = data;
             this.Data.TotalCount = totalCount;
+            this.Code = CodeEnum.Success;
         }
 
     }
