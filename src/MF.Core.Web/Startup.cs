@@ -1,5 +1,7 @@
-﻿using MF.Core.Infrastructure;
+﻿using MF.Core.Configuration;
+using MF.Core.Infrastructure;
 using MF.Core.Logging;
+using MF.Core.Web.MiddleWare;
 using MF.Core.Web.MiddleWare.Logging;
 using Microsoft.Owin;
 using Owin;
@@ -17,6 +19,8 @@ namespace MF.Core.Web
         public void Configuration(IAppBuilder app)
         {
             //ConfigureAuth(app);
+
+            ConfigLoader.SetConfig<LoggingMiddleWareConfig>("LoggingMiddleWare.json");
 
             app.Use<LoggingMiddleWare>(EngineContext.Current.Resolve<ILogger>());
         }

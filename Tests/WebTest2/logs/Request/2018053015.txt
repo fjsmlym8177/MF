@@ -1,0 +1,35 @@
+
+
+
+ 时间 2018-05-30 15:29:50.8720 
+ 消息内容 requestLog
+{"URI":"/api/Values","ElapsedTime":46.465900000000005,"Method":"GET","RequestParams":"","QueryString":"","Result":"[\"value1\",\"value2\"]","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["application/json"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.9"],"Host":["localhost:29162"],"Referer":["http://localhost:29162/swagger/ui/index"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null}
+ 线程ID 11 
+
+
+
+ 时间 2018-05-30 15:30:12.9932 
+ 消息内容 requestLog
+{"URI":"/api/Values/000","ElapsedTime":25.7392,"Method":"DELETE","RequestParams":"","QueryString":"","Result":"","Status":204,"Headers":{"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.9"],"Host":["localhost:29162"],"Referer":["http://localhost:29162/swagger/ui/index"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"],"Origin":["http://localhost:29162"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null}
+ 线程ID 16 
+
+
+
+ 时间 2018-05-30 15:30:38.3157 
+ 消息内容 requestLog
+{"URI":"/api/Values","ElapsedTime":12.71,"Method":"POST","RequestParams":"999","QueryString":"","Result":"","Status":204,"Headers":{"Connection":["keep-alive"],"Content-Length":["3"],"Content-Type":["application/json"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.9"],"Host":["localhost:29162"],"Referer":["http://localhost:29162/swagger/ui/index"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"],"Origin":["http://localhost:29162"]},"ChildrenRequests":{},"DBLogs":[],"Exception":null}
+ 线程ID 29 
+
+
+
+ 时间 2018-05-30 15:32:42.8056 
+ 消息内容 requestLog
+{"URI":"/api/Values/000","ElapsedTime":160.6844,"Method":"DELETE","RequestParams":"","QueryString":"","Result":"{\"Code\":500,\"SubCode\":\"unknow-error\",\"Msg\":\"系统繁忙！\"}","Status":200,"Headers":{"Connection":["keep-alive"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.9"],"Host":["localhost:29162"],"Referer":["http://localhost:29162/swagger/ui/index"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"],"Origin":["http://localhost:29162"]},"ChildrenRequests":{},"DBLogs":[],"Exception":"Message:xxx\r\nStackTrace   在 WebTest2.Controllers.ValuesController.Delete(Int32 id) 位置 D:\\源码\\Allen\\MF\\Tests\\WebTest2\\Controllers\\ValuesController.cs:行号 39\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_0.<GetExecutor>b__0(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()"}
+ 线程ID 39 
+
+
+
+ 时间 2018-05-30 15:32:55.3965 
+ 消息内容 requestLog
+{"URI":"/api/Values/2","ElapsedTime":17.5169,"Method":"PUT","RequestParams":"fff","QueryString":"","Result":"{\"Code\":400,\"SubCode\":\"\",\"Msg\":\"xxx\"}","Status":200,"Headers":{"Connection":["keep-alive"],"Content-Length":["3"],"Content-Type":["application/json"],"Accept":["*/*"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["zh-CN,zh;q=0.9"],"Host":["localhost:29162"],"Referer":["http://localhost:29162/swagger/ui/index"],"User-Agent":["Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"],"Origin":["http://localhost:29162"]},"ChildrenRequests":{},"DBLogs":[],"Exception":"Message:xxx\r\nStackTrace   在 WebTest2.Controllers.ValuesController.Put(Int32 id, String value) 位置 D:\\源码\\Allen\\MF\\Tests\\WebTest2\\Controllers\\ValuesController.cs:行号 33\r\n   在 lambda_method(Closure , Object , Object[] )\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_0.<GetExecutor>b__0(Object instance, Object[] methodParameters)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()\r\n--- 引发异常的上一位置中堆栈跟踪的末尾 ---\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()"}
+ 线程ID 13 

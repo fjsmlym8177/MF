@@ -1,4 +1,5 @@
-﻿using MF.Core.Logging;
+﻿using MF.Core.Configuration;
+using MF.Core.Logging;
 using MF.Core.Utilities;
 using Microsoft.Owin;
 using System;
@@ -18,10 +19,13 @@ namespace MF.Core.Web.MiddleWare.Logging
     public class LoggingMiddleWare : OwinMiddleware
     {
         private ILogger _logger;
+        //private Func<LoggingMiddleWareConfig> _acquireConfig;
+
 
         public LoggingMiddleWare(OwinMiddleware next, ILogger logger) : base(next)
         {
             _logger = logger;
+            //_acquireConfig = acquireConfig;
         }
 
         public override async Task Invoke(IOwinContext context)
@@ -75,7 +79,40 @@ namespace MF.Core.Web.MiddleWare.Logging
             requestLog.Status = context.Response.StatusCode;
             wathch.Stop();
             requestLog.ElapsedTime = wathch.Elapsed.TotalMilliseconds;
-            _logger.InsertRequestLog("requestLog", requestLog.ToJson());
+
+            Log(requestLog);
+        }
+
+        public void Log(ApiRequest request)
+        {
+            if (request.Result.StartsWith("<!DOCTYPE html>") || request.URI.StartsWith("/swagger"))
+            {
+                return;
+            }
+
+            var config = ConfigLoader.LoadConfig<LoggingMiddleWareConfig>();
+
+            if (config == null)
+            {
+                if (request.ElapsedTime > 1000)
+                {
+                    _logger.InsertRequestLog("requestLog", request.ToJson());
+                }
+            }
+            else
+            {
+                if (config.IncludePath.Any(p => request.URI.Contains(p)))
+                {
+                    _logger.InsertRequestLog("requestLog", request.ToJson());
+                    return;
+                }
+
+                if (!config.IgnorePath.Any(p => request.URI.Contains(p)) && config.Overtime <= request.ElapsedTime)
+                {
+                    _logger.InsertRequestLog("requestLog", request.ToJson());
+                    return;
+                }
+            }
         }
 
         internal class OutputCaptureStream : Stream

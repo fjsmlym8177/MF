@@ -73,6 +73,7 @@
     <Compile Include="Infrastructure\MikeWebEngine.cs" />
     <Compile Include="Infrastructure\WebAppTypeFinder.cs" />
     <Compile Include="MiddleWare\LoggingMiddleWare.cs" />
+    <Compile Include="MiddleWare\LoggingMiddleWareConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="WebFramework\Attributes\MFExceptionAttribute.cs" />
@@ -80,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Configs\LoggingMiddleWare.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

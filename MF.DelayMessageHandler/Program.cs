@@ -21,7 +21,40 @@ namespace MF.DelayMessageHandler
             AppBoot.Instance
                    .UseDeault();
 
+
+
+
             var context = EngineContext.Current.Resolve<IRabbitContext>();
+
+            EngineContext.Current.Resolve<IRabbitContext>().PublishDelay("AllenTest", "AllenTestQueue", "1", new
+            {
+                Age = "Name1",
+                Name = "Age"
+            }, 10000);
+
+            EngineContext.Current.Resolve<IRabbitContext>().PublishDelay("AllenTest", "AllenTestQueue", "1", new
+            {
+                Age = "Name2",
+                Name = "Age"
+            }, 10000);
+
+            EngineContext.Current.Resolve<IRabbitContext>().PublishDelay("AllenTest", "AllenTestQueue", "1", new
+            {
+                Age = "Name3",
+                Name = "Age"
+            }, 10000);
+
+            EngineContext.Current.Resolve<IRabbitContext>().PublishDelay("AllenTest", "AllenTestQueue", "1", new
+            {
+                Age = "Name4",
+                Name = "Age"
+            }, 10000);
+            EngineContext.Current.Resolve<IRabbitContext>().PublishDelay("AllenTest", "AllenTestQueue", "1", new
+            {
+                Age = "Name5",
+                Name = "Age"
+            }, 10000);
+
 
             context.AddQueueTask("DelayTransfer", (obj, eventArgs) =>
              {
