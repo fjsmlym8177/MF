@@ -1,6 +1,7 @@
 ﻿using MF.Core.Infrastructure;
 using MF.Core.Logging;
 using MF.Core.Rabbit;
+using MF.Core.Redis;
 using MF.Core.Utilities;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -80,10 +81,19 @@ namespace MF.Core.Rabbit
 
                     if (tuple.Item3 is RabbitMQDelayMessage<Object>)
                     {
-                        IBasicProperties properties = channel.CreateBasicProperties();
-                        properties.Expiration = (tuple.Item3 as RabbitMQDelayMessage<Object>).Expiration.ToString();
+                        //IBasicProperties properties = channel.CreateBasicProperties();
+                        //properties.Expiration 
+                        var expiration = (tuple.Item3 as RabbitMQDelayMessage<Object>).Expiration;
 
-                        channel.BasicPublish("Delay", "in", properties, binData);
+                        //channel.BasicPublish("Delay", "in", properties, binData);
+
+                        //"MQDelayHash";
+                        var db = EngineContext.Current.Resolve<IRedisConnectionWrapper>().GetDatabase();
+
+                        var key = $"DelayMessage:{ Guid.NewGuid()}";
+                        db.HashSet("MQDelayHash", key, message);
+                        db.StringSet(key, Guid.NewGuid().ToString(), TimeSpan.FromMilliseconds(expiration));
+
                     }
                     else
                     {
@@ -185,6 +195,9 @@ namespace MF.Core.Rabbit
 
         public void PublishDelay(string exchengeName, string routeKey, string type, object dataPack, int expiration = 0)
         {
+            if (expiration <= 0)
+                return;
+
             var message = new RabbitMQDelayMessage<Object>()
             {
                 Data = dataPack,

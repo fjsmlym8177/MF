@@ -25,13 +25,13 @@ namespace MF.Core.Lock
         private const int Frequency = 200;
 
 
-        private readonly RedisManager _readisManager;
+        private readonly IRedisConnectionWrapper _readisManager;
         private readonly IDatabase _db;
 
-        public RedisLockManager(RedisManager redisManager, int dbSpace)
+        public RedisLockManager(IRedisConnectionWrapper redisManager, int dbSpace)
         {
             _readisManager = redisManager;
-            _db = _readisManager.muxer.GetDatabase(dbSpace);
+            _db = _readisManager.GetDatabase(dbSpace);
         }
 
 

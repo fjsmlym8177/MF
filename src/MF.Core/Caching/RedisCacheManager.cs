@@ -13,12 +13,12 @@ namespace MF.Core.Caching
     public class RedisCacheManager : ICacheManager
     {
         private readonly IDatabase _db;
-        private readonly RedisManager _redisManager;
+        private readonly IRedisConnectionWrapper _redisConnectionWrapper;
 
-        public RedisCacheManager(RedisManager redisManager, int dbSpace)
+        public RedisCacheManager(IRedisConnectionWrapper redisConnectionWrapper, int dbSpace)
         {
-            _redisManager = redisManager;
-            this._db = redisManager.muxer.GetDatabase(dbSpace);
+            _redisConnectionWrapper = redisConnectionWrapper;
+            this._db = redisConnectionWrapper.GetDatabase(dbSpace);
         }
 
 
@@ -114,9 +114,9 @@ namespace MF.Core.Caching
         {
             //_perRequestCacheManager.RemoveByPattern(pattern);
 
-            foreach (var endPoint in _redisManager.muxer.GetEndPoints())
+            foreach (var endPoint in _redisConnectionWrapper.GetEndPoints())
             {
-                var server = _redisManager.muxer.GetServer(endPoint);
+                var server = _redisConnectionWrapper.GetServer(endPoint);
                 var keys = server.Keys(database: _db.Database, pattern: $"*{pattern}*");
 
                 //we should always persist the data protection key list
@@ -133,9 +133,9 @@ namespace MF.Core.Caching
         {
             //_perRequestCacheManager.Clear();
 
-            foreach (var endPoint in _redisManager.muxer.GetEndPoints())
+            foreach (var endPoint in _redisConnectionWrapper.GetEndPoints())
             {
-                var server = _redisManager.muxer.GetServer(endPoint);
+                var server = _redisConnectionWrapper.GetServer(endPoint);
 
                 //we can use the code below (commented), but it requires administration permission - ",allowAdmin=true"
                 //server.FlushDatabase();

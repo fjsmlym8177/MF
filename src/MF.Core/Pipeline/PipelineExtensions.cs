@@ -15,7 +15,7 @@ namespace MF.Core.Pipeline
         {
             var builder = new ContainerBuilder();
 
-            var redisManager = EngineContext.Current.Resolve<RedisManager>();
+            var redisManager = EngineContext.Current.Resolve<IRedisConnectionWrapper>();
 
             builder.RegisterInstance(new RedisPipelineContext(redisManager, config, logAction)).As<IPipelineContext>().SingleInstance();
 

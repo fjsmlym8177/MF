@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MF.Core.Infrastructure;
+using MF.Core.Logging;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -40,7 +42,7 @@ namespace MF.Core.Utilities
 
             if (request.Method != "GET" && data != null)
             {
-             
+
 
                 if (contentType == "application/json")
                 {
@@ -60,7 +62,7 @@ namespace MF.Core.Utilities
 
 
 
-       
+
             }
 
             var response = request.GetResponse() as HttpWebResponse;
@@ -70,6 +72,18 @@ namespace MF.Core.Utilities
 
             wathch.Stop();
             ApiRequest.AddChildrenReponse(key, result, wathch.Elapsed.TotalMilliseconds);
+
+            if (HttpContext.Current == null)
+            {
+                EngineContext.Current.Resolve<ILogger>().InsertHttpLog("HttpLog", new ChildRequest
+                {
+                    ElapsedTime = wathch.Elapsed.TotalMilliseconds,
+                    Method = method,
+                    Params = @params,
+                    Url = url,
+                    Value = result
+                }.ToJson());
+            }
 
             return result.ToDeserialize<T>();
         }

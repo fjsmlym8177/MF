@@ -12,17 +12,17 @@ namespace MF.Core.Pipeline
 {
     public class RedisPipelineContext : IPipelineContext
     {
-        private readonly RedisManager _redisManager;
+        private readonly IRedisConnectionWrapper _redisManager;
         private readonly RedisPipelineConfig _config;
         private readonly IDatabase _db;
         private Action<string> _logAction;
 
 
-        public RedisPipelineContext(RedisManager redisManager, RedisPipelineConfig config, Action<string> logAction = null)
+        public RedisPipelineContext(IRedisConnectionWrapper redisManager, RedisPipelineConfig config, Action<string> logAction = null)
         {
             _redisManager = redisManager;
             _config = config;
-            _db = _redisManager.muxer.GetDatabase(_config.DBSpace);
+            _db = _redisManager.GetDatabase(_config.DBSpace);
             _logAction = logAction;
         }
 

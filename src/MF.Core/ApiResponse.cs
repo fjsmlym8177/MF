@@ -45,6 +45,12 @@ namespace MF.Core
 
     public class ApiResponsePager<T> : ApiResponse<Pager<T>>
     {
+        public ApiResponsePager()
+        {
+            this.Data = new Pager<T>();
+            this.Code = CodeEnum.Success;
+        }
+
         public ApiResponsePager(IPagedList<T> pagerData)
         {
             this.Data = new Pager<T>();

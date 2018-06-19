@@ -58,6 +58,10 @@ namespace MF.Core
                 model.ChildrenRequests[key].Value = result;
                 model.ChildrenRequests[key].ElapsedTime = elapsedTime;
             }
+            else
+            {
+                //EngineContext.Current.Resolve<ILogger>().InsertHttpLog("EF", log);
+            }
         }
 
         public static void AddHttpLog(string log)

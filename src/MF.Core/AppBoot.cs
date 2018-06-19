@@ -32,7 +32,8 @@ namespace MF.Core
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterInstance(new RedisManager(config.RedisConn)).As<RedisManager>().SingleInstance();
+            builder.RegisterInstance(new RedisConnectionWrapper(config)).As<IRedisConnectionWrapper>().SingleInstance();
+
 
             builder.Update(EngineContext.Current.ContainerManager.Container);
 
@@ -53,7 +54,7 @@ namespace MF.Core
         {
             var builder = new ContainerBuilder();
 
-            var redisManager = EngineContext.Current.Resolve<RedisManager>();
+            var redisManager = EngineContext.Current.Resolve<IRedisConnectionWrapper>();
 
             builder.RegisterInstance(new RedisCacheManager(redisManager, db)).As<ICacheManager>().SingleInstance();
 

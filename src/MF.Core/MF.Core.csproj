@@ -94,6 +94,8 @@
     <Compile Include="Pipeline\RedisPipelineConfig.cs" />
     <Compile Include="Pipeline\RedisPipelineContext.cs" />
     <Compile Include="Redis\IRedisConfig.cs" />
+    <Compile Include="Redis\IRedisConnectionWrapper.cs" />
+    <Compile Include="Redis\RedisConnectionWrapper.cs" />
     <Compile Include="Redis\RedisManager.cs" />
     <Compile Include="ScrollPager.cs" />
     <Compile Include="Exceptions\MikeException.cs" />
